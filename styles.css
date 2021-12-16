@@ -1,0 +1,483 @@
+@import url(//db.onlinewebfonts.com/c/544da55955a950deb15d6a7536c4da34?family=Brandon+Grotesque+Regular);
+
+:root {
+  --primary: #8a8a8a;
+  --dark: rgb(47, 79, 79);
+  --light: #ccc;
+  --extra-dark: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--primary);
+  box-sizing: border-box;
+  font-family: 'Brandon Grotesque Regular', sans-serif;
+}
+
+/* ------ NAVBAR STYLES ------ */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
+  /* right is not defined in this tutorial. But added from the other video -hamburger */
+  height: 70px;
+  width: 100%;
+  z-index: 99;
+}
+
+nav .navbar {
+  max-width: 1280px;
+  height: 100%;
+  margin: auto;
+  padding: 5px 25px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+}
+
+nav .navbar .brand {
+  height: 100%;
+  line-height: 70px;
+  color: var(--extra-dark);
+  font-size: 24px;
+  letter-spacing: 0.02em;
+}
+
+nav .navbar .nav-links {
+  height: 100%;
+  line-height: 70px;
+  display: flex;
+
+}
+
+nav .navbar .nav-links .links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .navbar .nav-links .links li {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  /* line-height: 70px; */
+  /* display: flex;  */
+  /* this would stretch the container vertically and you wont get the transparent border-bottom */
+  align-items: center;
+}
+
+nav .navbar .nav-links .links .left-side {
+  margin: 0 15px;
+}
+
+nav .navbar .nav-links .links .right-side {
+  margin-left: 15px;
+}
+
+nav .navbar .nav-links .links li a {
+  height: 100%;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  white-space: nowrap;
+}
+
+nav .navbar .nav-links .links li a:hover {
+  border-bottom: 1px solid var(--light);
+}
+
+.navbar .nav-links .links li a.active-link  {
+  color: var(--extra-dark);
+  border-bottom: 1px solid var(--dark);
+}
+
+.arrow {
+  text-align: left;
+  line-height: 10px;
+  width: 15px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.navbar .nav-links .links li:hover .arrow {
+  transform: rotate(180deg);
+}
+
+.navbar .nav-links .links .sub-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  /* left: 0; */
+  text-align: right;
+  line-height: 30px;
+  white-space: nowrap;
+  background: #fff;
+  /* border-radius: 0 0 4px 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
+  display: none;
+}
+
+.navbar .nav-links .links .sub-menu li {
+  padding: 0 10px;
+}
+
+.navbar .nav-links .links .sub-menu li a {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 15px;
+  background: transparent;
+}
+
+.navbar .nav-links .links li:hover .sub-menu {
+  display: block;
+  /* transition: all 0.4s ease; */
+}
+
+.navbar .nav-links .links li:hover .hover-link {
+  color: var(--dark);
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav .navbar .nav-links .links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    line-height: 70px;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding-top: 25px;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: var(--dark);
+    border-radius: 6px;
+    z-index: 1;
+    
+    transform-origin: 0 0;
+    transition: 0.4s;
+  }
+  
+  .hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: var(--light);
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    transform: translate(0px, -5px) rotate(45deg);
+  }
+  
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: translate(-3px, 1px) rotate(-45deg);
+  }
+  
+  .hamburger.active:hover span {
+    background-color: var(--light);
+  }
+
+}
+
+/* * ------ HOME PAGE STYLES ------  */  
+/* blog portfolio style */
+
+
+.blog-collection {
+  max-width: 1280px;
+  margin: 50px auto 5px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 40px 20px 0 20px;
+}
+
+.blog-item-group {
+  position: relative;
+  padding: 5px;
+}
+
+.blog-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text-group {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+}
+
+.logo-group img {
+  padding-bottom: 15px;
+  max-width: 60%;
+}
+
+
+.img-text-group .subtitle {
+  transition: 1s;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: transparent;
+  white-space: nowrap;
+}
+
+.img-text-group:hover .subtitle {
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.2em;
+}
+
+.img-text-group .button {
+  font-weight: 400;
+  color: transparent;
+  
+}
+
+.img-text-group:hover .button {
+  font-weight: 400;
+  color: #fff;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(40%);
+}
+
+@media screen and (max-width: 768px) {
+  .blog-collection {
+    display: block;
+  }
+
+  .logo-group img {
+    max-width: 50%;
+  }
+
+  .img-text-group:hover .subtitle {
+    font-size: 16px;
+  }
+}
+
+/* ------ Footer Styles ------ */
+
+.footer {
+  background-color: rgb(214, 158, 113);
+  padding-top: 2rem;
+  font: 400 14px/1.8em 'Open Sans Condensed';
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5px;
+  overflow: hidden;
+  position: relative;
+  text-shadow: none;
+  z-index: 999;
+  max-width: 1440px;
+}
+
+.footer-container {
+  overflow: visible;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
+
+.foocol {
+  font-size: 12pt;
+  margin: 0 -1px 0 0;
+  position: relative;
+  height: 100%;
+  min-height: 1px;
+  float: left;
+  width: 20%;
+  border-right: none;
+}
+
+
+.footer > .footer-container > .foocol > .first {
+  padding: 0 2% 5px 20%;
+  border-left: none;
+ 
+}
+
+.footer .foocol:nth-child(5) {
+  width: 26%;
+}
+
+.foocol.last {
+  border-left: 1px solid white;
+  line-height: 1.5em;
+  padding: 0 0 4rem 4%;
+  border-right: none;
+  float: right;
+}
+
+.foocol h2 {
+  border-bottom: 1px solid white;
+  padding-bottom: 15px;
+  font-size: 12px;
+  letter-spacing: .1em;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font: 750 18px monospace;
+}
+
+.footer ul li,
+.foocol h2,
+.post-date,
+.post-list a,
+.footer-bio,
+.footer-social-bar i,
+.copyright p {
+  color: #fff;
+}
+
+ul {
+  list-style: square;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.post-list a {
+  font-size: 20px;
+}
+
+.post-date {
+  display: block;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.custom-widget .footer-bio {
+  white-space: pre-wrap;
+}
+
+.meta-more {
+  display: inline-block;
+  position: relative;
+  background: white;
+  text-align: center;
+  margin: 20px 0;
+  padding: 0 25px;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.meta-more a {
+  text-decoration: none;
+  color: rgb(214, 158, 113);
+  font-size: 12px;
+}
+
+.footer-social-bar i {
+  padding-right: 22px;
+}
+
+.copyright {
+  padding: 0.8rem 0;
+  overflow: hidden;
+  border-top: 1px solid white;
+  font-size: 12px;
+}
+
+.fr {
+  float: right;
+  padding-right: 1rem;
+}
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .foocol {
+    padding: 40px;
+    font-size: 20px;
+    width: 50%;
+  }
+  
+  .footer-container {
+    margin: auto;
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .foocol:nth-child(1) {
+    margin: 0 5rem;
+    width: auto;
+    align-items: center;
+  }
+
+  .footer-bio {
+    white-space: pre-wrap;
+  }
+
+  .footer .foocol:nth-child(5),
+  .custom-widget {
+    width: 80%;
+    border-left: none;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5em;
+    padding-left: 4%;
+  }
+  
+  .logo img {
+    padding-left: 4%;
+  }
+
+  .post-list,
+  .post-date {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .meta-more {
+    position: relative;
+    display: inline-block;
+    padding: 0 45px;
+    white-space: nowrap;
+  }
+
+  .copyright {
+    padding: 5px 0;
+  }
+}
+
