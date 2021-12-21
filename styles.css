@@ -15,6 +15,10 @@
   font-family: 'Brandon Grotesque Regular', sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 /* ------ NAVBAR STYLES ------ */
 nav {
   position: fixed;
@@ -50,6 +54,7 @@ nav .navbar .nav-links {
   height: 100%;
   line-height: 70px;
   display: flex;
+  padding-bottom: 6em;
 
 }
 
@@ -79,6 +84,7 @@ nav .navbar .nav-links .links .right-side {
 nav .navbar .nav-links .links li a {
   height: 100%;
   text-decoration: none;
+  padding-bottom: 2px;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.5s;
   white-space: nowrap;
@@ -124,19 +130,19 @@ nav .navbar .nav-links .links li a:hover {
 }
 
 .navbar .nav-links .links .sub-menu li a {
-  color: var(--dark);
+  color: var(--primary);
   text-decoration: none;
   font-size: 15px;
   background: transparent;
 }
 
+.navbar .nav-links .links .sub-menu li a:hover {
+  color: var(--extra-dark);
+}
+
 .navbar .nav-links .links li:hover .sub-menu {
   display: block;
   /* transition: all 0.4s ease; */
-}
-
-.navbar .nav-links .links li:hover .hover-link {
-  color: var(--dark);
 }
 
 .hamburger {
@@ -211,7 +217,7 @@ nav .navbar .nav-links .links li a:hover {
   margin: 50px auto 5px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 40px 20px 0 20px;
+  padding: 25px 20px 0 20px;
 }
 
 .blog-item-group {
@@ -284,7 +290,8 @@ nav .navbar .nav-links .links li a:hover {
   }
 
   .logo-group img {
-    max-width: 50%;
+    width: 50%;
+    max-width: 100px;
   }
 
   .img-text-group:hover .subtitle {
@@ -341,7 +348,7 @@ nav .navbar .nav-links .links li a:hover {
 .foocol.last {
   border-left: 1px solid white;
   line-height: 1.5em;
-  padding: 0 0 4rem 4%;
+  padding: 0 0 4rem 1.5%;
   border-right: none;
   float: right;
 }
@@ -369,21 +376,37 @@ nav .navbar .nav-links .links li a:hover {
 ul {
   list-style: square;
   margin: 0;
-  padding: 5px 0;
+  padding: 20px 0;
 }
 
 .post-list a {
-  font-size: 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding-bottom: 10px;
+  white-space: nowrap;
 }
 
 .post-date {
   display: block;
   font-style: italic;
   font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.foocol.last img {
+  width: 40%;
 }
 
 .custom-widget .footer-bio {
   white-space: pre-wrap;
+}
+
+.custom-widget .footer-social-bar {
+  white-space: nowrap;
+}
+
+.footer-social-bar i {
+  padding-right: 22px;
 }
 
 .meta-more {
@@ -401,10 +424,6 @@ ul {
   text-decoration: none;
   color: rgb(214, 158, 113);
   font-size: 12px;
-}
-
-.footer-social-bar i {
-  padding-right: 22px;
 }
 
 .copyright {
@@ -428,9 +447,10 @@ ul {
 
 @media screen and (max-width: 768px) {
   .foocol {
-    padding: 40px;
-    font-size: 20px;
+    padding: 30px;
     width: 50%;
+
+    float: none;
   }
   
   .footer-container {
@@ -440,33 +460,33 @@ ul {
   }
 
   .foocol:nth-child(1) {
-    margin: 0 5rem;
-    width: auto;
     align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .foocol.last img {
+    width: 100%;
+    max-width: 100px;
   }
 
   .footer-bio {
     white-space: pre-wrap;
   }
 
-  .footer .foocol:nth-child(5),
+  .footer .foocol.last,
+  .foocol.last img,
   .custom-widget {
-    width: 80%;
+    float: none;
+    margin: 0 auto;
     border-left: none;
-    text-align: left;
-    font-size: 16px;
+    padding-left: 15px;
     line-height: 1.5em;
-    padding-left: 4%;
   }
   
-  .logo img {
-    padding-left: 4%;
-  }
-
   .post-list,
   .post-date {
     display: block;
-    white-space: nowrap;
   }
 
   .meta-more {
@@ -476,8 +496,61 @@ ul {
     white-space: nowrap;
   }
 
+  .footer-social-bar i {
+    padding-right: 35px;
+  }
+
   .copyright {
     padding: 5px 0;
   }
 }
 
+/* ------ BLOG PAGE STYLES ------ */
+
+.container {
+  width: 95%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 1em;
+  text-align: center;
+  font-family: 'Brandon Groteque Regular', sans-serif;
+}
+/* 
+img.main-blog-pic {
+  position: bottom;
+} */
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0.5em 0;
+}
+
+.col-1 {
+  width: 20%;
+}
+
+.col-2 {
+  width: 40%;
+}
+
+.col-3 {
+  width: 70%;
+}
+
+.col.col-1.col-bg {
+  border: 2px solid var(--primary);
+  padding: 1em;
+}
+
+.col-bg p {
+  color: var(--extra-dark);
+}
+
+p.blog-page {
+  padding-bottom: 20px;
+}
