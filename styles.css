@@ -26,14 +26,13 @@ nav {
   left: 0;
   right: 0; 
   /* right is not defined in this tutorial. But added from the other video -hamburger */
-  height: 70px;
+  /* height: 70px; */
   width: 100%;
   z-index: 99;
 }
 
 nav .navbar {
   max-width: 1280px;
-  height: 100%;
   margin: auto;
   padding: 5px 25px;
   display: flex;
@@ -42,20 +41,11 @@ nav .navbar {
   justify-content: space-between;
 }
 
-nav .navbar .brand {
-  height: 100%;
-  line-height: 70px;
-  color: var(--extra-dark);
-  font-size: 24px;
-  letter-spacing: 0.02em;
-}
 
 nav .navbar .nav-links {
-  height: 100%;
-  line-height: 70px;
-  display: flex;
-  padding-bottom: 6em;
 
+  display: flex;
+ 
 }
 
 nav .navbar .nav-links .links {
@@ -66,23 +56,22 @@ nav .navbar .nav-links .links {
 nav .navbar .nav-links .links li {
   position: relative;
   list-style: none;
-  height: 100%;
-  /* line-height: 70px; */
-  /* display: flex;  */
-  /* this would stretch the container vertically and you wont get the transparent border-bottom */
-  align-items: center;
+
 }
 
-nav .navbar .nav-links .links .left-side {
-  margin: 0 15px;
+nav .navbar .nav-links .links li {
+  margin-left: 3rem;
 }
 
-nav .navbar .nav-links .links .right-side {
-  margin-left: 15px;
+/* ====== Typography ====== */
+nav .navbar .brand {
+
+  color: var(--extra-dark);
+  font-size: 24px;
+  letter-spacing: 0.02em;
 }
 
 nav .navbar .nav-links .links li a {
-  height: 100%;
   text-decoration: none;
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
@@ -99,35 +88,6 @@ nav .navbar .nav-links .links li a:hover {
   border-bottom: 1px solid var(--dark);
 }
 
-.arrow {
-  text-align: left;
-  line-height: 10px;
-  width: 15px;
-  text-align: center;
-  transition: all 0.4s ease;
-}
-
-.navbar .nav-links .links li:hover .arrow {
-  transform: rotate(180deg);
-}
-
-.navbar .nav-links .links .sub-menu {
-  position: absolute;
-  top: 50px;
-  right: 0;
-  /* left: 0; */
-  text-align: right;
-  line-height: 30px;
-  white-space: nowrap;
-  background: #fff;
-  /* border-radius: 0 0 4px 4px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
-  display: none;
-}
-
-.navbar .nav-links .links .sub-menu li {
-  padding: 0 10px;
-}
 
 .navbar .nav-links .links .sub-menu li a {
   color: var(--primary);
@@ -140,6 +100,71 @@ nav .navbar .nav-links .links li a:hover {
   color: var(--extra-dark);
 }
 
+@media (max-width: 768px) {
+  nav .navbar .nav-links .links li a {
+    color: var(--extra-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    border-bottom: none;
+    transition: color 0.5s;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  nav .navbar .nav-links .links li a:hover {
+    color: rgb(214, 158, 113);
+    border-bottom: none;
+  }
+
+  .navbar .nav-links .links li a.active-link  {
+  
+    border-bottom: none;
+  }
+
+  .arrow {
+  color: var(--extra-dark);
+  }
+
+  .navbar .nav-links .links li:hover .arrow {
+    color: rgb(214, 158, 113);
+  }
+
+  .navbar .nav-links .links .sub-menu li a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 11px;
+    color: rgb(214, 158, 113);
+  }
+
+}
+
+.navbar .nav-links .links .sub-menu {
+  position: absolute;
+  right: 0;
+  padding: 1.5em 2px 0.5em 0;
+   text-align: right;
+ 
+  white-space: nowrap;
+  background: #fff;
+  display: none;
+}
+
+.navbar .nav-links .links .sub-menu li {
+  padding-bottom: 20px;
+}
+
+.arrow {
+  text-align: left;
+  line-height: 10px;
+  width: 15px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.navbar .nav-links .links li:hover .arrow {
+  transform: rotate(180deg);
+}
+
 .navbar .nav-links .links li:hover .sub-menu {
   display: block;
   /* transition: all 0.4s ease; */
@@ -149,24 +174,58 @@ nav .navbar .nav-links .links li a:hover {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  
   nav .navbar .nav-links .links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 999;
+    inset: 0 0 0 50%;
+    background: rgba(221, 221, 221, 0.42);
+    backdrop-filter: blur(0.5rem);
+    padding: min(20rem, 12vh) 3rem;
+    margin: 0;
+    transform: translateX(100%);
+  }
+
+  nav .navbar .nav-links .links li {
+    padding-bottom: 1.5em;
+    margin: 10px 0;
+  }
+
+  .navbar .nav-links .links .sub-menu {
+    position: relative;
+    background-color: transparent;
+    padding: 0;
+    top: 10px;
+    left: 2rem;
+    text-align: left;
     display: none;
+  }
+
+  .navbar .nav-links .links .sub-menu li {
+    padding-bottom: 1px;
+  }
+
+  nav .navbar .nav-links .links[data-visible="true"] {
+    transform: translateX(0);
   }
 
   .hamburger {
     display: block;
     position: relative;
-    z-index: 1;
-    height: 100%;
-    line-height: 70px;
+    z-index: 2000;
+    
     user-select: none;
     appearance: none;
     border: none;
     outline: none;
     background: none;
     cursor: pointer;
-    padding-top: 25px;
+    margin-top: 0.5em;
+    padding: 1rem 0;
   }
   
   .hamburger span {
@@ -203,7 +262,7 @@ nav .navbar .nav-links .links li a:hover {
   }
   
   .hamburger.active:hover span {
-    background-color: var(--light);
+    background-color: rgb(214, 158, 113);
   }
 
 }
@@ -268,13 +327,15 @@ nav .navbar .nav-links .links li a:hover {
   letter-spacing: 0.2em;
 }
 
-.img-text-group .button {
+.img-text-group .read-more {
   font-weight: 400;
   color: transparent;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
   
 }
 
-.img-text-group:hover .button {
+.img-text-group:hover .read-more {
   font-weight: 400;
   color: #fff;
 }
@@ -508,9 +569,15 @@ ul {
 /* ------ BLOG PAGE STYLES ------ */
 
 .container {
-  width: 95%;
+  /* width: 95%; */
   max-width: 900px;
-  margin: 0 auto;
+  padding-top: 40px;
+  margin: 2rem auto;
+}
+
+img.main-blog-img {
+  width: 100%;
+  max-height: 450px;
 }
 
 h1 {
@@ -518,10 +585,6 @@ h1 {
   text-align: center;
   font-family: 'Brandon Groteque Regular', sans-serif;
 }
-/* 
-img.main-blog-pic {
-  position: bottom;
-} */
 
 .columns {
   display: flex;

@@ -1,8 +1,19 @@
 const hamburger = document.querySelector(".hamburger")
+const nav = document.querySelector(".links")
 
 hamburger.addEventListener("click", function() {
   this.classList.toggle('active')
+
+  const visibility = nav.getAttribute("data-visible")
+  if (visibility === "false") {
+    nav.setAttribute("data-visible", true)
+  } else {
+    nav.setAttribute("data-visible", false)
+  }
+
+  console.log(visibility)
 })
+
 
 const blogCollection = document.querySelectorAll(".blog-item-group")
 
