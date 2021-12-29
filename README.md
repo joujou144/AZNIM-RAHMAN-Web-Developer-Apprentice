@@ -6,8 +6,7 @@ https://joujou144.github.io/Blog-Portfolio/
 Work in progress:
 - about page
 - content for blog pages
-- navbar for smaller screens less than 768px
-- footer
+- footer icons
 
 ## Acknowledgements
 
