@@ -107,17 +107,16 @@ nav .navbar .nav-links .links li a:hover {
     letter-spacing: 0.2em;
     border-bottom: none;
     transition: color 0.5s;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: bolder;
   }
 
   nav .navbar .nav-links .links li a:hover {
-    color: rgb(214, 158, 113);
+    color: #fff;
     border-bottom: none;
   }
 
   .navbar .nav-links .links li a.active-link  {
-  
     border-bottom: none;
   }
 
@@ -130,10 +129,14 @@ nav .navbar .nav-links .links li a:hover {
   }
 
   .navbar .nav-links .links .sub-menu li a {
-    color: var(--primary);
+    
     text-decoration: none;
     font-size: 11px;
     color: rgb(214, 158, 113);
+  }
+
+  .navbar .nav-links .links .sub-menu li a:hover {
+    color: #fff;
   }
 
 }
@@ -142,7 +145,7 @@ nav .navbar .nav-links .links li a:hover {
   position: absolute;
   right: 0;
   padding: 1.5em 2px 0.5em 0;
-   text-align: right;
+  text-align: right;
  
   white-space: nowrap;
   background: #fff;
@@ -182,17 +185,26 @@ nav .navbar .nav-links .links li a:hover {
     flex-direction: column;
     justify-content: flex-start;
     z-index: 999;
-    inset: 0 0 0 50%;
-    background: rgba(221, 221, 221, 0.42);
-    backdrop-filter: blur(0.5rem);
+    inset: 0 0 0 0;
+    background: rgba(216, 215, 215, 0.32);
+    backdrop-filter: blur(0.3rem);
     padding: min(20rem, 12vh) 3rem;
     margin: 0;
     transform: translateX(100%);
   }
 
+  nav .navbar .brand {
+    z-index: 2000;
+  }
+
   nav .navbar .nav-links .links li {
-    padding-bottom: 1.5em;
-    margin: 10px 0;
+    /* padding-bottom: 0.5em; */
+    margin-top: 3em;
+    text-align: center;
+  }
+
+  nav .navbar .nav-links .links .hover-link {
+    margin-left: 0.5em;
   }
 
   .navbar .nav-links .links .sub-menu {
@@ -200,13 +212,14 @@ nav .navbar .nav-links .links li a:hover {
     background-color: transparent;
     padding: 0;
     top: 10px;
-    left: 2rem;
-    text-align: left;
+    /* left: 2em; */
+    text-align: center;
     display: none;
   }
 
   .navbar .nav-links .links .sub-menu li {
     padding-bottom: 1px;
+    margin: 0.5em auto;
   }
 
   nav .navbar .nav-links .links[data-visible="true"] {
@@ -532,7 +545,7 @@ ul {
   }
 
   .footer-bio {
-    white-space: pre-wrap;
+    white-space: wrap;
   }
 
   .footer .foocol.last,
