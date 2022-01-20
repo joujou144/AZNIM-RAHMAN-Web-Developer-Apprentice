@@ -11,5 +11,5 @@ Work in progress:
 ## Acknowledgements
 
 Assisted by coding mentors
-- Hajime https://github.com/foxbunny
-- Dayana https://github.com/chaqxxish
+- [Hajime Yamasaki Vukelic](https://medium.com/@hayavuk)
+- [Dayana Kamaruzaman](https://www.7thlumen.com/)
