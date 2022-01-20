@@ -1,6 +1,8 @@
 # Blog-Portfolio
 A blog portfolio that will showcase my journey in coding, web design and a career change in tech
 
+## Demo 
+
 https://joujou144.github.io/Blog-Portfolio/
 
 Work in progress:
