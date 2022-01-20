@@ -5,6 +5,9 @@
   --dark: rgb(47, 79, 79);
   --light: #ccc;
   --extra-dark: #333;
+  --showcase: black;
+  --neutral: rgb(214, 158, 113);
+  --neutral2: rgb(177, 143, 99);
 }
 
 * {
@@ -29,6 +32,8 @@ nav {
   /* height: 70px; */
   width: 100%;
   z-index: 99;
+  padding: 1rem 0;
+  background-color: white;
 }
 
 nav .navbar {
@@ -37,10 +42,8 @@ nav .navbar {
   padding: 5px 25px;
   display: flex;
   align-items: center;
-  background-color: white;
   justify-content: space-between;
 }
-
 
 nav .navbar .nav-links {
 
@@ -125,14 +128,14 @@ nav .navbar .nav-links .links li a:hover {
   }
 
   .navbar .nav-links .links li:hover .arrow {
-    color: rgb(214, 158, 113);
+    color: var(--neutral);
   }
 
   .navbar .nav-links .links .sub-menu li a {
     
     text-decoration: none;
     font-size: 11px;
-    color: rgb(214, 158, 113);
+    color: var(--neutral);
   }
 
   .navbar .nav-links .links .sub-menu li a:hover {
@@ -144,7 +147,7 @@ nav .navbar .nav-links .links li a:hover {
 .navbar .nav-links .links .sub-menu {
   position: absolute;
   right: 0;
-  padding: 1.5em 2px 0.5em 0;
+  padding: 1.5em 0.5em 0.5em 0;
   text-align: right;
  
   white-space: nowrap;
@@ -275,7 +278,7 @@ nav .navbar .nav-links .links li a:hover {
   }
   
   .hamburger.active:hover span {
-    background-color: rgb(214, 158, 113);
+    background-color: var(--neutral);
   }
 
 }
@@ -354,7 +357,7 @@ nav .navbar .nav-links .links li a:hover {
 }
 
 .img-darken {
-  transition: 1s;
+  transition: 1s ease-in-out;
   filter: brightness(40%);
 }
 
@@ -376,7 +379,7 @@ nav .navbar .nav-links .links li a:hover {
 /* ------ Footer Styles ------ */
 
 .footer {
-  background-color: rgb(214, 158, 113);
+  background-color: var(--neutral);
   padding-top: 2rem;
   font: 400 14px/1.8em 'Open Sans Condensed';
   width: 100%;
@@ -391,7 +394,7 @@ nav .navbar .nav-links .links li a:hover {
 
 .footer-container {
   overflow: visible;
-  width: 100%;
+  width: 94%;
   margin: 0 auto;
   padding: 0 10px;
   position: relative;
@@ -407,7 +410,6 @@ nav .navbar .nav-links .links li a:hover {
   width: 20%;
   border-right: none;
 }
-
 
 .footer > .footer-container > .foocol > .first {
   padding: 0 2% 5px 20%;
@@ -447,8 +449,8 @@ nav .navbar .nav-links .links li a:hover {
   color: #fff;
 }
 
-ul {
-  list-style: square;
+ul.post-list {
+  list-style: none;
   margin: 0;
   padding: 20px 0;
 }
@@ -496,7 +498,7 @@ ul {
 
 .meta-more a {
   text-decoration: none;
-  color: rgb(214, 158, 113);
+  color: var(--neutral);
   font-size: 12px;
 }
 
@@ -563,6 +565,10 @@ ul {
     display: block;
   }
 
+  ul.post-list {
+    list-style: square;
+  }
+
   .meta-more {
     position: relative;
     display: inline-block;
@@ -578,6 +584,260 @@ ul {
     padding: 5px 0;
   }
 }
+
+/* ------- About Page Style ------- */
+
+header {
+  width: 100%;
+  min-height: 80vh;
+  margin: auto;
+  margin-top: 3.5rem;
+  cursor: pointer;
+  background-image: linear-gradient(rgba(32, 21, 21, 0.5), rgba(43, 39, 39, 0.5)), url(images/about/frozenleaf.jpg);
+  background-position: center center;
+  position: relative;
+  background-size: cover;
+}
+
+header,
+.pink {
+  max-width: 1440px;
+}
+
+.about-page-container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1.2em;
+}
+
+.pink {
+  background: rgb(255, 242, 248);
+  padding: 1.5em 0;
+}
+
+.white {
+  background-color: white;
+  padding: 2em 0;
+}
+
+.pictureOfMe {
+  max-width: 35%;
+  height: auto;
+  border-radius: 50%;
+  max-width: 250px;
+  position: absolute;
+  display: flex;
+  border: 5px solid white;
+  right: 2rem;
+  top: 17rem;
+}
+
+span.triangle-element {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: calc(2 * 8px * 0.866) solid var(--neutral2);
+  border-top: 8px solid transparent;
+  display: inline-block;
+  position: relative;
+  left: -2px;
+}
+
+.profile-title p {
+  font-family: 'Brandon Grotesque Regular', sans-serif;
+  position: absolute;
+  top: 120px;
+  color: white;
+  text-align: left;
+  font-size: 3em;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+/* tech section */
+.about-page-container h2,
+.about-section p,
+.tech-section p {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.heading-box {  
+  letter-spacing: 0.02em; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 3px solid rgb(177, 143, 99);
+  color: var(--dark);
+  font-weight: lighter;
+  padding: 0.2em 0.5em;
+}
+
+.tech-section p {
+  padding-top: 1em;
+  color: var(--extra-dark);
+}
+
+/* Projects section */
+
+.project-section h2 {
+  padding-top: 0.5em;
+}
+
+.pink.project-section {
+  padding: 2em 0;
+}
+
+.projects {
+  padding: 2em 0.5em 0 0.5em;
+}
+
+.project-list {
+  padding: 1em 0;
+}
+
+.projects a,
+.project-list a {
+  text-decoration: none;
+}
+
+a.project-container {
+   position: relative;
+}
+
+.project-container img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.project-list h4 {
+  position: absolute;
+  font-variant: all-small-caps;
+  color: transparent;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 0;
+  max-width: 150px;
+  top: -20rem;
+  left: 12rem;
+  /* transition: 0.2s ease-in-out; */
+}
+
+.project-list:hover h4,
+.project-list:focus h4 {
+  color: white;
+  transition: 1s ease-in-out;
+}
+
+.project-list p {
+  color: var(--dark);
+  font-size: 1.2em;
+}
+
+span.boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+span.tech-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 8px 3px 0;
+  background-color: var(--light);
+  justify-content: center;
+  width: 4.2rem;
+  height: 1.5em;
+}
+
+span.tech-box p{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: white;
+}
+
+span.project-info,
+span.project-arrow,
+.list-skills h4 {
+  color: var(--neutral2);
+}
+
+@media (min-width: 768px) {
+  .pictureOfMe {
+    width: 30%;
+    max-width: 280px;
+    right: 8rem;
+    top: 15rem; 
+  }
+
+  .project-section .about-page-container {
+    max-width: 800px;
+  }
+
+  .projects {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-container img {
+    width: 100%;
+  }
+
+  .project-list {
+    width: 40%;
+    margin: 0 10px;
+  }
+
+  .project-list h4 {
+    position: relative;
+    top: -6rem;
+    left: 0;
+  }
+
+  .project-list p {
+    font-size: 1em;
+  }
+}
+
+/* Skills section  */
+.skill-list-container {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.list-skills {
+  padding: 0 2em;
+}
+
+.list-skills h4 {
+  letter-spacing: 0.1em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.8em;
+  font-weight: bolder;
+  padding-bottom: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.list-skills li {
+  color: var(--extra-dark);
+  list-style: none;
+  text-align: center;
+}
+
+.work-btn {
+  margin: 0 0.5em;
+  text-decoration: none;
+  border-bottom: 2px solid var(--primary);
+}
+
+.work-btn:hover,
+.work-btn:focus {
+  border-bottom: 2px solid var(--light);
+  color: var(--neutral);
+  transition: 0.4s ease-in-out;
+}
+
 
 /* ------ BLOG PAGE STYLES ------ */
 
