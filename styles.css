@@ -141,9 +141,9 @@ nav .navbar .nav-links .links li a:hover {
 
 @media (max-width: 768px) {
 
-  nav {
+  /* nav {
     padding: 0.3em 0;
-  }
+  } */
 
   nav .navbar .nav-links .links {
     position: fixed;
@@ -843,6 +843,7 @@ span.triangle-element {
 
   .about-bio{
     display: flex;
+    /* align-items: baseline; */
   }
 
   .about-bio .big-text,
@@ -881,31 +882,57 @@ span.triangle-element {
   margin: 0 auto;
   padding: 2em 0 2.5rem 0;
   border: 1px solid green;
-  /* width: 90%; */
+  max-width: 840px;
+}
+
+.course-content,
+.projects {
+  max-width: 1050px;
 }
 
 .bullet-row-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
 .bullet-wrapper {
-  border: 1px solid blue;
-  padding: 3em;
-  white-space: nowrap;
+  margin: 2em 0;
 }
 
-@media (min-width: 768px) {
-  .bullet-row {
+@media (min-width: 600px) {
+  .bullet-row-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .bullet-wrapper {
-    margin: 0 3.5em;
+    border: 1px solid blue;
+    padding: 3em;
+    white-space: nowrap;
+  }
+  
+  .bullet-label {
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .bullet-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 5em;
+  }
+
+  .bullet-wrapper {
     padding: 0;
     white-space: wrap;
+  }
+
+  .bullet-row-wrapper {
+    /* gap: 3em; */
+    justify-content: space-around;
   }
 }
 
@@ -918,63 +945,14 @@ span.triangle-element {
 
 .bullet-label {
   font-size: 19px;
-  margin-top: 1em;
   color: var(--neutral2);
   display: block;
-}
-
-/* .bullet-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
-} */
-
-
-
-@media (min-width: 768px) {
-   
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    gap: 6rem;
-  }
-
-  .project-container img {
-   height: 300px;
-  }
-
-  .project-list h4 {
-    position: relative;
-    top: -10rem;
-    left: 0;
-  }
-
-  .project-info {
-    margin-top: -20px;
-    padding-bottom: 1em;
-  }
-
-  .project-list p {
-    font-size: 1em;
-  }
-
-  span.boxes {
-    white-space: nowrap;
-  }
-  
 }
 
 /* course section */
 
 .course-content {
   margin: 2.5em auto 1em;
-  max-width: 800px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center; */
 }
 
 .course-content a {
@@ -1033,10 +1011,9 @@ span.triangle-element {
 
 @media (min-width: 900px) {
   .course-content {
-    max-width: 1280px; 
     display: flex;
     flex-direction: row;
-    gap: 2.5em;
+    gap: 1em;
   }
 
   .course-content-link {
@@ -1050,6 +1027,7 @@ span.triangle-element {
 }
 
 /* Projects section */
+
 
 .project-section h2 {
   padding: 0.5em 0;
@@ -1109,4 +1087,39 @@ span.project-info-title,
 span.project-arrow,
 .list-skills h4 {
   color: var(--neutral2);
+}
+
+
+@media (min-width: 768px) {
+   
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    gap: 6rem;
+  }
+
+  .project-container img {
+   height: 300px;
+  }
+
+  .project-list h4 {
+    position: relative;
+    top: -10rem;
+    left: 0;
+  }
+
+  .project-info {
+    margin-top: -20px;
+    padding-bottom: 1em;
+  }
+
+  .project-list p {
+    font-size: 1em;
+  }
+
+  span.boxes {
+    white-space: nowrap;
+  }
+  
 }
