@@ -92,18 +92,18 @@ nav .navbar .nav-links .links li a:hover {
   border-bottom: 1px solid var(--neutral2);
 }
 
-.navbar .nav-links .links .sub-menu li a {
+/* .navbar .nav-links .links .sub-menu li a {
   color: var(--primary);
   text-decoration: none;
   font-size: 15px;
   background: transparent;
-}
+} */
 
-.navbar .nav-links .links .sub-menu li a:hover {
+/* .navbar .nav-links .links .sub-menu li a:hover {
   color: var(--extra-dark);
-}
+} */
 
-.navbar .nav-links .links .sub-menu {
+/* .navbar .nav-links .links .sub-menu {
   position: absolute;
   right: 0;
   padding: 1.5em 0.5em 0.5em 0;
@@ -112,8 +112,8 @@ nav .navbar .nav-links .links li a:hover {
   white-space: nowrap;
   background: #fff;
   display: none;
-}
-
+} */
+/* 
 .navbar .nav-links .links .sub-menu li {
   padding-bottom: 20px;
 }
@@ -132,8 +132,8 @@ nav .navbar .nav-links .links li a:hover {
 
 .navbar .nav-links .links li:hover .sub-menu {
   display: block;
-  /* transition: all 0.4s ease; */
-}
+ 
+} */
 
 .hamburger {
   display: none;
@@ -182,11 +182,11 @@ nav .navbar .nav-links .links li a:hover {
     border-bottom: none;
   }
 
-  .navbar .arrow-down {
+  /* .navbar .arrow-down {
   color: var(--extra-dark);
-  }
+  } */
 
-  .navbar .nav-links .links li:hover .arrow-down {
+  /* .navbar .nav-links .links li:hover .arrow-down {
     color: var(--neutral);
   }
 
@@ -199,7 +199,7 @@ nav .navbar .nav-links .links li a:hover {
 
   .navbar .nav-links .links .sub-menu li a:hover {
     color: #fff;
-  }
+  } */
 
   nav .navbar .nav-links .links li {
   
@@ -210,13 +210,13 @@ nav .navbar .nav-links .links li a:hover {
   /* nav .navbar .nav-links .links .hover-link {
     margin-left: 0.5em;
   } */
-
+/* 
   .navbar .nav-links .links .sub-menu {
     position: relative;
     background-color: transparent;
     padding: 0;
     top: 10px;
-    /* left: 2em; */
+    
     text-align: center;
     display: none;
   }
@@ -224,7 +224,7 @@ nav .navbar .nav-links .links li a:hover {
   .navbar .nav-links .links .sub-menu li {
     padding-bottom: 1px;
     margin: 0.5em auto;
-  }
+  } */
 
   nav .navbar .nav-links .links[data-visible="true"] {
     transform: translateX(0);
