@@ -39,3 +39,15 @@ projectContainer.forEach(projectContainer => {
      projectContainer.childNodes[1].classList.remove('img-darken')
   })
 })
+
+const featuredProjectContainer = document.querySelectorAll(".featured-project-container")
+
+featuredProjectContainer.forEach(featuredProjectContainer => {
+  featuredProjectContainer.addEventListener('mouseover', () => {
+      featuredProjectContainer.childNodes[1].classList.add('img-darken')
+  })
+
+  featuredProjectContainer.addEventListener('mouseout', () => {
+     featuredProjectContainer.childNodes[1].classList.remove('img-darken')
+  })
+})
