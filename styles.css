@@ -892,7 +892,7 @@ span.triangle-element {
 }
 
 .bullet-wrapper {
-  border: 1px solid black;
+  border: 1px solid blue;
   padding: 3em;
   white-space: nowrap;
 }
