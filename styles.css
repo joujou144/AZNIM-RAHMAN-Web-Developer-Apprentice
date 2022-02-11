@@ -320,8 +320,7 @@ nav .navbar .nav-links .links li a:hover {
 
 /* ------ Footer Styles ------ */
 .footer {
-  max-width: 1440px;
-  width: 100%;
+  max-width: 1360px;
   margin: 0 auto;
   background-color:  var(--rust2);
   padding-top: 1em;
