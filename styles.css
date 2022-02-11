@@ -1144,5 +1144,5 @@ textarea::-webkit-scrollbar-thumb {
 .submit-btn:focus {
   border: 2px solid var(--neutral4);
   color: var(--sky);
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
