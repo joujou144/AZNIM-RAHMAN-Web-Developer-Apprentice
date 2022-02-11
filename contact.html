@@ -5,8 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="//db.onlinewebfonts.com/c/544da55955a950deb15d6a7536c4da34?family=Brandon+Grotesque+Regular" rel="stylesheet" type="text/css"/>
-  <!-- <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'> -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet"> -->
+  
   <link rel="stylesheet" href="styles.css">
   <title>Contact | AZNIM RAHMAN</title>
 </head>
@@ -14,17 +13,38 @@
   <nav>
     <div class="navbar contact-nav">
       <div class="brand">AZNIM RAHMAN</div>
-
-      <button class="hamburger contact-hamburger">
+         
+      <a href="index.html" class="contact-close">
         <span></span>
         <span></span>
         <span></span>
-      </button>
+      </a>
+    
     </div>
   </nav>
 
   <section class="contact-section">
     <div class="common-page-container">
+   
+      <div class="overlay">
+        
+        <div class="form-title">Feel Free to Send Me an Electronic Letter</div>
+
+        <form action="https://formsubmit.co/991f544ec4cdb350b4f611505a00a450" method="POST">
+     
+          <input type="text" id="name" placeholder="Your Name" required>
+          <small class="error"></small>
+
+          <input type="text" id="email" placeholder="Your Email" required>
+          <small class="error"></small>
+
+          <textarea type="text" id="message" placeholder="Your Message" rows="6" required></textarea>
+          <small class="error"></small>
+
+          <button type="submit" class="submit-btn">Submit</button>
+
+        </form>
+      </div>
       
     </div>
   </section>
