@@ -8,10 +8,7 @@
   --dust: #ffe6ff;
   --dust2: #f1d9cd;
   --powder: #eeeeee;
-  --accent: #f6cb4b;
-  --accent2: #ffce3c;
   --accent3: #ffe082;
-  --rust: #e17439;
   --rust2: #df5333;
   --pitch: #272121;
   --sky: #99b3a8;
@@ -20,7 +17,6 @@
   --candy2: #ff2483;
   --clr: rgba(216, 215, 215, 0.32);
   --clr2: #b3a78c;
-  --neutral: rgb(228, 174, 129);
   --neutral2: rgb(177, 143, 99);
   --neutral3: #e3bca6;
   --neutral4: #e8ddc9;
@@ -320,7 +316,7 @@ nav .navbar .nav-links .links li a:hover {
 
 /* ------ Footer Styles ------ */
 .footer {
-  max-width: 1360px;
+  max-width: 1380px;
   margin: 0 auto;
   background-color:  var(--rust2);
   padding-top: 1em;
@@ -682,7 +678,7 @@ span.triangle-element {
 }
 
 .about-bio .small-text {
-  font-size: 17px;
+  font-size: 1.2em;
   text-align: justify;
   padding-top: 8px;
   color: var(--dust2);
@@ -1059,6 +1055,7 @@ span.project-arrow {
   display: block;
 }
 
+
 .contact-close span:nth-child(2) {
   opacity: 0;
   transform: translateX(-30px);
@@ -1111,12 +1108,12 @@ input, textarea {
   border: none;
   background-color: transparent;
   font-size: 1em;
-  border: 2px solid var(--neutral4);
+  border: 2px solid var(--powder);
 }
 
 input[type="text"]:focus, 
 textarea:focus {
-  border: 2px solid var(--rose);
+  border: 2px solid var(--clr);
 }
 
 textarea::-webkit-scrollbar {
@@ -1124,7 +1121,7 @@ textarea::-webkit-scrollbar {
 }
 
 textarea::-webkit-scrollbar-thumb {
-  background-color: var(--neutral3);
+  background-color: var(--rose2);
   cursor: pointer;
 }
 
@@ -1137,7 +1134,8 @@ textarea::-webkit-scrollbar-thumb {
   padding: 5px 10px;
   background-color: transparent;
   border: 2px solid var(--candy);
-  }
+  cursor: pointer;
+}
   
 .submit-btn:hover,
 .submit-btn:focus {
