@@ -6,9 +6,7 @@ A blog portfolio that will showcase my journey in coding, web design and a caree
 https://joujou144.github.io/Blog-Portfolio/
 
 Work in progress:
-- about page
-- content for blog pages
-- footer icons
+- Work portfolio page (recent work images, title and info)
 
 ## Acknowledgements
 
