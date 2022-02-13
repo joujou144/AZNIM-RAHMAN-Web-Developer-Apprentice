@@ -48,8 +48,8 @@ nav {
   right: 0; 
   z-index: 99;
   padding: 0.5em 0;
-  background-color:transparent;
-  backdrop-filter: blur(0.3rem);
+  /* background-color:transparent;
+  backdrop-filter: blur(0.3rem); */
 }
 
 nav .navbar {
@@ -170,10 +170,10 @@ nav .navbar .nav-links .links li a:hover {
     justify-content: flex-start;
     align-items: center;
     z-index: 999;
-    inset: 0 0 13em 0;
+    inset: 0 0 30% 0;
     background: var(--clr);
     backdrop-filter: blur(0.3rem);
-    padding: min(20em, 100px) 3em;
+    padding: min(20rem, 12vh) 3em;
     margin-left: -1.5em;
     transform: translateX(100%);
   }
