@@ -384,18 +384,19 @@ nav .navbar .nav-links .links li a:hover {
 /* ------- About Page Style ------- */
 
 header {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 4em auto;
   min-height: 30vh;
 }
 
 header .header-content { 
-  width: 90%;
+  width: 82%;
   margin: 0 auto;
   position: relative; 
   display: flex;
   flex-wrap: wrap;
   column-gap: 2em;
+  align-items: center;
 }
 
 
@@ -407,13 +408,13 @@ header .header-content {
   background-repeat: no-repeat;
   min-width: 350px;
   margin: auto;
-  flex: 1 1 30%;
+  flex: 1 1 40%;
 }
 
 .header-content > .right-content {
-  flex: 1 1 60%;
-  display: grid;
-  place-items: center;
+  flex: 1 1 45%;
+  /* display: grid;
+  place-items: center; */
 }
 
 .sign-section {
@@ -423,11 +424,12 @@ header .header-content {
   line-height: 1.8;
 }
 
-/* .sign-section {
-  width: 60%;
-  transform: translate(0%, -5%);
-} */
-
+@media (max-width: 768px) {
+  .sign-section {
+    font-size: 1.8em;
+    line-height: 1.5;
+  } 
+}
 
 .header-subtitle-blink {
   background-image: radial-gradient(
@@ -612,7 +614,6 @@ header .header-content {
 
 section {
   margin: 0 auto;
-
 }
 
 .common-page-container {
@@ -640,7 +641,7 @@ section {
 
 
 .about-bio {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -657,10 +658,10 @@ span.triangle-element {
 .about-bio .big-text,
 .about-bio em {
   text-align: right;
-  font-size: 1.7em;
+  font-size: 1.2em;
   letter-spacing: 0.02em;
   font-family: 'Fjalla One', sans-serif;
-  line-height: 2em; 
+  line-height: 1.8; 
   color: var(--dust);
 }
 
@@ -671,15 +672,25 @@ span.triangle-element {
 .about-bio .small-text {
   font-size: 1.2em;
   text-align: justify;
-  padding-top: 8px;
+  /* padding-top: 8px; */
   color: var(--dust2);
+  margin-top: 1em;
 }
 
 @media (min-width: 768px) {
-
+  
+ 
   .about-bio {
     display: flex;
     column-gap: 2em; 
+  }
+
+  .about-bio .big-text {
+    font-size: 1.7em;
+  }
+
+  .about-bio .small-text {
+    margin-top: 8px;
   }
 }
 
