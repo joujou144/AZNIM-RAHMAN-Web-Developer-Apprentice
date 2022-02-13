@@ -48,8 +48,7 @@ nav {
   right: 0; 
   z-index: 99;
   padding: 0.5em 0;
-  /* background-color:transparent;
-  backdrop-filter: blur(0.3rem); */
+  background-color: black;
 }
 
 nav .navbar {
@@ -163,6 +162,10 @@ nav .navbar .nav-links .links li a:hover {
 
 @media (max-width: 768px) {
 
+  nav {
+    background-color: transparent;
+  }
+
   nav .navbar .nav-links .links {
     position: fixed;
     display: flex;
@@ -172,7 +175,7 @@ nav .navbar .nav-links .links li a:hover {
     z-index: 999;
     inset: 0 0 30% 0;
     background: var(--clr);
-    backdrop-filter: blur(0.3rem);
+    backdrop-filter: blur(0.2em);
     padding: min(20rem, 12vh) 3em;
     margin-left: -1.5em;
     transform: translateX(100%);
