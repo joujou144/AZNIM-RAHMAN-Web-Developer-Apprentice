@@ -49,6 +49,8 @@ nav {
   z-index: 99;
   padding: 0.5em 0;
   background-color: black;
+  max-width: 1600;
+  margin: 0 auto;
 }
 
 nav .navbar {
@@ -322,11 +324,11 @@ nav .navbar .nav-links .links li a:hover {
 
 /* ------ Footer Styles ------ */
 .footer {
-  max-width: 1400px; 
+  max-width: 1600px; 
   margin: 0 auto;
   background-color:  var(--rust2);
   padding-top: 1em;
-  font: 400 14px/1.8em 'Open Sans Condensed'; 
+  font: 400 14px/1.8em 'Brandon Grotesque'; 
   overflow: hidden;
   position: relative;
   text-shadow: none;
@@ -334,6 +336,7 @@ nav .navbar .nav-links .links li a:hover {
 }
 
 .footer-container {
+  max-width: 1280px;
   width: 90%;
   margin: auto;
 }
@@ -387,7 +390,7 @@ nav .navbar .nav-links .links li a:hover {
 /* ------- About Page Style ------- */
 
 header {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 4em auto;
   min-height: 30vh;
 }
@@ -622,7 +625,7 @@ section {
 }
 
 .common-page-container {
-  max-width: 1200px;
+  max-width: 1280px;
   width: 90%;
   margin: 0 auto;
   padding: 3em 0;
