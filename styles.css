@@ -409,15 +409,17 @@ header .header-content {
   background-position: center center; 
   position: relative;
   background-repeat: no-repeat;
-  min-width: 350px;
-  margin: auto;
-  flex: 1 1 40%;
+  /* object-fit: cover; */
+  min-width: 300px;
+  /* width: 100%; */
+  flex: 1 1 35%;
 }
 
 .header-content > .right-content {
-  flex: 1 1 45%;
-  /* display: grid;
-  place-items: center; */
+  flex: 1 1 55%;
+  display: grid;
+  place-items: center;
+
 }
 
 .sign-section {
@@ -439,9 +441,9 @@ header .header-content {
     ellipse 50% 35% at 50% 50%,
     #572307,
     transparent);
-    text-shadow: 0 0 0.6rem var(--dust), 0 0 1.5rem var(--accent),
+    text-shadow: 0 0 0.7rem var(--dust), 0 0 1.5rem var(--accent),
     -0.2rem 0.1rem 1rem var(--accent), 0.2rem 0.1rem 1rem var(--accent3),
-    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem var(--accent3);
+    0 -0.5rem 4rem #ff2483, 0 0.5rem 3rem var(--accent3);
   animation: shine 2s forwards, flicker 3s infinite;
 }
 
@@ -699,6 +701,11 @@ span.triangle-element {
 
 /* interest section */
 
+.interest-section {
+  transform-style: preserve-3d;
+  position: relative;
+}
+
 
 .interest-icon-section,
 .bullet-section {
@@ -721,11 +728,18 @@ span.triangle-element {
 
 .bullet-wrapper .icon-interest {
   fill: var(--dust2);
+  transform-style: preserve-3d;
+  animation: rotate 27s infinite linear;
 }
 
 .interest-icon-section .bullet-label {
   color: var(--clr2);
 }
+
+@keyframes rotate {
+  to { transform: rotateY(-360deg); }
+  }
+
 
 
 /* ------ BLOG PAGE STYLES ------ */
