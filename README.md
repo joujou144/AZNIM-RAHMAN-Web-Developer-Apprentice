@@ -3,7 +3,7 @@ A blog portfolio that will showcase my journey in coding, web design and a caree
 
 ## Demo 
 
-https://joujou144.github.io/Blog-Portfolio/
+https://joujou144.github.io/AZNIM-RAHMAN-Web-Developer-Apprentice/
 
 Work in progress:
 - Work portfolio page (recent work images, title and project info)
