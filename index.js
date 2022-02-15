@@ -28,26 +28,15 @@ blogCollection.forEach(blogItem => {
 })
 
 
-const projectContainer = document.querySelectorAll(".project-container")
+const projectImgGroup = document.querySelectorAll(".project-img-group")
 
-projectContainer.forEach(projectContainer => {
-  projectContainer.addEventListener('mouseover', () => {
-      projectContainer.childNodes[1].classList.add('img-darken')
+projectImgGroup.forEach(projectImgGroup => {
+  projectImgGroup.addEventListener('mouseover', () => {
+      projectImgGroup.childNodes[1].classList.add('img-darken')
   })
 
-  projectContainer.addEventListener('mouseout', () => {
-     projectContainer.childNodes[1].classList.remove('img-darken')
-  })
-})
-
-const featuredProjectContainer = document.querySelectorAll(".featured-project-container")
-
-featuredProjectContainer.forEach(featuredProjectContainer => {
-  featuredProjectContainer.addEventListener('mouseover', () => {
-      featuredProjectContainer.childNodes[1].classList.add('img-darken')
-  })
-
-  featuredProjectContainer.addEventListener('mouseout', () => {
-     featuredProjectContainer.childNodes[1].classList.remove('img-darken')
+  projectImgGroup.addEventListener('mouseout', () => {
+     projectImgGroup.childNodes[1].classList.remove('img-darken')
   })
 })
+
