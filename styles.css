@@ -657,7 +657,7 @@ section {
 
 
 .about-bio {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -744,14 +744,25 @@ span.triangle-element {
   flex-direction: row;
   align-items: baseline;
   gap: 2em;
-  width: 90%;
+  width: 85%;
   margin: auto;
 }
 
 .interest-icon-section .bullet-wrapper {
-  flex: 1 1 5%;  
+  flex: 1 1 15%;  
 }
 
+@media (max-width: 900px) {
+  .interest-icon-section .bullet-wrapper {
+    flex: 1 1 35%;  
+  }
+}
+
+@media (max-width: 500px) {
+  .interest-icon-section .bullet-wrapper {
+    flex: 1 1 50%;  
+  }
+}
 
 .bullet-wrapper .icon-interest {
   fill: var(--dust2);
@@ -766,7 +777,6 @@ span.triangle-element {
 @keyframes rotate {
   to { transform: rotateY(-360deg); }
   }
-
 
 
 /* ------ BLOG PAGE STYLES ------ */
