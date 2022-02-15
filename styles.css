@@ -367,19 +367,19 @@ nav .navbar .nav-links .links li a:hover {
 
 .footer-social-bar i {
   color: var(--powder);
-  font-size: 1.5em;
+  font-size: 1.4em;
 
   background: transparent;
   border-radius: 50%;
-  border: 2px solid transparent;
-  padding: 4px;
-  margin-right: 5px;
+  border: 3px solid transparent;
+  padding: 5px;
+  margin-right: 7px;
 }
 
 .footer-social-bar i:hover,
 .footer-social-bar i:focus {
   color: var(--powder) ;
-  border: 2px solid var(--powder) ;
+  border: 3px solid var(--powder) ;
   transition: 0.5s ease-in-out;
 }
 
@@ -428,7 +428,7 @@ header .header-content {
 }
 
 .header-content > .right-content {
-  flex: 1 1 55%;
+  flex: 1 1 50%;
   display: grid;
   place-items: center;
 
@@ -443,7 +443,7 @@ header .header-content {
 
 @media (max-width: 768px) {
   .sign-section {
-    font-size: 1.8em;
+    font-size: 2em;
     line-height: 1.5;
   } 
 }
@@ -674,7 +674,7 @@ span.triangle-element {
 .about-bio .big-text,
 .about-bio em {
   text-align: right;
-  font-size: 1.2em;
+  font-size: 1.5em;
   letter-spacing: 0.02em;
   font-family: 'Fjalla One', sans-serif;
   line-height: 1.8; 
@@ -682,7 +682,7 @@ span.triangle-element {
 }
 
 .about-bio em {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .about-bio .small-text {
@@ -699,6 +699,10 @@ span.triangle-element {
     column-gap: 2em; 
   }
 
+  .about-bio > * {
+    flex: 1 1 35%;
+  }
+
   .about-bio .big-text {
     font-size: 1.7em;
   }
@@ -710,13 +714,13 @@ span.triangle-element {
 
 @media (min-width: 1400px) {
   .about-bio .small-text {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   nav .navbar .brand,
   nav .navbar .nav-links,
   footer .copyright {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 }
 
