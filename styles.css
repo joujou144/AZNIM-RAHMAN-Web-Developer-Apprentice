@@ -69,7 +69,7 @@ nav .navbar {
 
 nav .navbar .nav-links {
   display: flex;
-  font-size: 15pt;
+  font-size: 16pt;
 }
 
 nav .navbar .nav-links .links {
@@ -702,7 +702,7 @@ span.triangle-element {
 }
 
 .about-bio .small-text {
-  font-size: 16pt;
+  font-size: 17pt;
   text-align: justify;
   color: var(--dust2);
   margin-top: 1em;
@@ -919,7 +919,7 @@ span.triangle-element {
 }
 
 .course-side > span.course-content-info {
-  font-size: 15.5pt;
+  font-size: 16.5pt;
 }
 
 
@@ -973,7 +973,7 @@ span.triangle-element {
 
 .skill-list-widget li {
   padding: 5px;
-  font-size: 15pt;
+  font-size: 16.5pt;
 }
 
 
@@ -985,7 +985,7 @@ span.triangle-element {
   .skill-list-widget .skill-title,
   .skill-header,
   .skill-list-widget li {
-    font-size: 14.5pt;
+    font-size: 16.5pt;
   }
 
   .skill-sidebar {
@@ -1067,7 +1067,7 @@ span.triangle-element {
 }
 
 .project-content p {
-  font-size: 15.5pt;
+  font-size: 16.5pt;
   text-align: justify;
 }
 
