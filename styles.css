@@ -38,6 +38,7 @@ body {
   box-sizing: border-box;
   font-family: 'Brandon Grotesque Condensed', sans-serif;
   letter-spacing: 0.04em;
+  
 }
 
 img {
@@ -68,12 +69,12 @@ nav .navbar {
 
 nav .navbar .nav-links {
   display: flex;
+  font-size: 14pt;
 }
 
 nav .navbar .nav-links .links {
   display: flex;
   justify-content: flex-end;
-  font-size: 17px;
 }
 
 nav .navbar .nav-links .links li {
@@ -701,7 +702,7 @@ span.triangle-element {
 }
 
 .about-bio .small-text {
-  font-size: 1.2em;
+  font-size: 16pt;
   text-align: justify;
   color: var(--dust2);
   margin-top: 1em;
@@ -890,11 +891,6 @@ span.triangle-element {
   flex: 1 1 20%;
 }
 
-/* .progress-bar-container {
-  width: 80%;
-  margin: auto;
-} */
-
 .progress {
   border-radius: 20px;
   background: var(--rose);  
@@ -923,7 +919,7 @@ span.triangle-element {
 }
 
 .course-side > span.course-content-info {
-  font-size: 1.2em;
+  font-size: 15.5pt;
 }
 
 
@@ -977,10 +973,11 @@ span.triangle-element {
 
 .skill-list-widget li {
   padding: 5px;
+  font-size: 15pt;
 }
 
 
-@media (max-width: 830px) {
+@media (max-width: 850px) {
  
   .bullet-label,
   .course-side span.course-title,
@@ -988,7 +985,7 @@ span.triangle-element {
   .skill-list-widget .skill-title,
   .skill-header,
   .skill-list-widget li {
-    font-size: 17.5px;
+    font-size: 14.5pt;
   }
 
   .skill-sidebar {
@@ -1048,7 +1045,7 @@ span.triangle-element {
   position: absolute;
   font-variant: all-small-caps;
   color: transparent;
-  font-size: 1.2em;
+  font-size: 1.6em;
   letter-spacing: 0.1em;
   text-align: center;
   box-sizing: border-box;
@@ -1070,7 +1067,7 @@ span.triangle-element {
 }
 
 .project-content p {
-  font-size: 1.2em;
+  font-size: 15.5pt;
   text-align: justify;
 }
 
