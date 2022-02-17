@@ -439,12 +439,16 @@ header .header-content {
   letter-spacing: 0.02em;
   font-family: 'Staatliches', cursive;
   line-height: 1.8;
+  display: block;
+  width: 100%;
+ 
 }
 
 @media (max-width: 768px) {
   .sign-section {
     font-size: 2em;
     line-height: 1.5;
+    display: block;
   } 
 }
 
