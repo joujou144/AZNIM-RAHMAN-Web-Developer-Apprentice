@@ -1,6 +1,9 @@
-@import url(//db.onlinewebfonts.com/c/544da55955a950deb15d6a7536c4da34?family=Brandon+Grotesque+Regular);
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@font-face {
+  font-family: "Brandon Grotesque Condensed";
+  src: url(/Brandon.Grotesque.Condensed-www.Dfonts.org/Brandon.Grotesque.Condensed-www.Dfonts.org/Brandon.Grotesque.Condensed/BrandonGrotesqueCond-Regular.ttf) format("ttf");
+}
 
 :root {
   
@@ -33,7 +36,8 @@ body {
   padding: 0;
   color: var(--dust);
   box-sizing: border-box;
-  font-family: 'Brandon Grotesque Regular', sans-serif;
+  font-family: 'Brandon Grotesque Condensed', sans-serif;
+  letter-spacing: 0.04em;
 }
 
 img {
@@ -69,6 +73,7 @@ nav .navbar .nav-links {
 nav .navbar .nav-links .links {
   display: flex;
   justify-content: flex-end;
+  font-size: 17px;
 }
 
 nav .navbar .nav-links .links li {
@@ -84,8 +89,8 @@ nav .navbar .nav-links .links li {
 nav .navbar .brand {
 
   color: var(--dust);
-  font-size: 24px;
-  letter-spacing: 0.02em;
+  font-size: 26px;
+  letter-spacing: 0.05em;
 }
 
 nav .navbar .nav-links .links li a {
@@ -175,7 +180,7 @@ nav .navbar .nav-links .links li a:hover {
     justify-content: flex-start;
     align-items: center;
     z-index: 999;
-    inset: 0 0 30% 0;
+    inset: 0 0 20% 0;
     background: var(--clr);
     backdrop-filter: blur(0.2em);
     padding: min(20rem, 12vh) 3em;
@@ -412,6 +417,7 @@ header .header-content {
   flex-wrap: wrap;
   column-gap: 2em;
   align-items: center;
+ 
 }
 
 
@@ -421,45 +427,50 @@ header .header-content {
   background-position: center center; 
   position: relative;
   background-repeat: no-repeat;
-  /* object-fit: cover; */
   min-width: 300px;
-  /* width: 100%; */
   flex: 1 1 35%;
 }
 
 .header-content > .right-content {
-  flex: 1 1 50%;
-  display: grid;
-  place-items: center;
-
+  flex: 1 1 45%;
 }
 
 .sign-section {
-  font-size: 2.3em;
+  font-size: 2.8em;
   letter-spacing: 0.02em;
   font-family: 'Staatliches', cursive;
   line-height: 1.8;
-  display: block;
+
+  /* display: block; */
+  position: relative;
   width: 100%;
- 
+  bottom: 1em;
+  left: 1em;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 737px) {
+
   .sign-section {
     font-size: 2em;
-    line-height: 1.5;
+    line-height: 1.3;
     display: block;
-  } 
+    left: 0;
+    bottom: 5em;
+    letter-spacing: 0.05em;
+  }
+
+  .about-section .common-page-container {
+    padding-top: 0;
+    margin-top: -5em;
+  }
 }
 
 .header-subtitle-blink {
-  background-image: radial-gradient(
-    ellipse 50% 35% at 50% 50%,
-    #572307,
-    transparent);
-    text-shadow: 0 0 0.7rem var(--dust), 0 0 1.5rem var(--accent),
-    -0.2rem 0.1rem 1rem var(--accent), 0.2rem 0.3rem 1rem var(--accent3),
-    0 -0.5rem 4rem var(--candy2), 0 0.5rem 3rem var(--accent3);
+
+    text-shadow: 0 0 2rem var(--accent3), 0 0 5rem var(--accent3),
+    -1rem 0.5rem 2rem var(--accent3), 4rem 2rem 2rem var(--accent3),
+    0 -3rem 4rem var(--candy), 0 0.5rem 2rem var(--accent3);
   animation: shine 2s forwards, flicker 3s infinite;
 }
 
@@ -476,19 +487,19 @@ header .header-content {
   22%,
   36%,
   75% {
-    color: var(--dust);
-    text-shadow: 0 0 0.6rem var(--dust), 0 0 1.5rem var(--candy),
-      -0.2rem 0.1rem 1rem var(--accent3), 0.2rem 0.1rem 1rem var(--candy),
-      0 -0.5rem 2rem var(--candy2), 0 0.5rem 3rem var(--accent3);
+    color: var(--candy3);
+    text-shadow: 0 0 0.6rem var(--candy), 0 0 1.5rem var(--rust2),
+      -0.2rem 0.1rem 1rem var(--rust2), 0.2rem 0.1rem 1rem var(--accent3),
+      0 -0.5rem 2rem var(--candy3), 0 0.5rem 3rem var(--rust2);
   }
   28%,
   33% {
-    color: var(--accent3);
+    color: var(--dust);
     text-shadow: none;
   }
   82%,
   97% {
-    color: var(--accent3);
+    color: var(--candy3);
     text-shadow: none;
   }
 }
@@ -500,9 +511,9 @@ header .header-content {
   }
   100% {
     color: var(--dust);
-    text-shadow: 0 0 0.6rem dust, 0 0 1.5rem var(--rust),
-      -0.2rem 0.1rem 1rem var(--candy), 0.2rem 0.1rem 1rem var(--accent),
-      0 -0.5rem 2rem var(--candy2), 0 0.5rem 3rem var(--accent);
+    text-shadow: 0 0 0.6rem dust, 0 0 1.5rem var(--rust2),
+      -0.2rem 0.1rem 1rem var(--accent3), 0.2rem 0.1rem 1rem var(--accent3),
+      0 -0.5rem 2rem var(--candy2), 0 0.5rem 3rem var(--rust2);
   }
 }
 
@@ -680,9 +691,9 @@ span.triangle-element {
   text-align: right;
   font-size: 1.5em;
   letter-spacing: 0.02em;
-  font-family: 'Fjalla One', sans-serif;
   line-height: 1.8; 
   color: var(--dust);
+  font-family: "Fjalla One", cursive;
 }
 
 .about-bio em {
@@ -708,26 +719,13 @@ span.triangle-element {
   }
 
   .about-bio .big-text {
-    font-size: 1.7em;  // test merge
+    font-size: 1.7em;
   }
 
   .about-bio .small-text {
     margin-top: 8px;
   }
 }
-/* 
-@media (min-width: 1400px) {
-  .about-bio .small-text {
-    font-size: 1.5em;
-  }
-
-  nav .navbar .brand,
-  nav .navbar .nav-links,
-  footer .copyright {
-    font-size: 1.2em;
-  }
-} */
-
 
 
 /* interest section */
@@ -873,17 +871,19 @@ span.triangle-element {
 }
 
 .course-content-flex {
-  margin: 2em auto;
+  margin: 2em auto 0.5em;
   width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 3em;
+  text-align: justify;
 }
 
 .course-content-flex > .course-side {
   flex: 1 1 65%;
+ 
 }
 
 .course-content-flex > .skill-sidebar {
@@ -923,9 +923,7 @@ span.triangle-element {
 }
 
 .course-side > span.course-content-info {
-  text-align: justify;
   font-size: 1.2em;
-  /* margin: 2em 0; */
 }
 
 
@@ -1127,29 +1125,32 @@ span.tech-icon-row {
 }
 
 .overlay {
-  width: 100%;
-  max-width: 1280px;
-  height: 50%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  width: 90%;
+  max-width: 750px;
+  height: 70%;
   margin: 0 auto;
-  padding: min(10rem, 12vh) 2rem;
+  position: relative;
+  top: -3em;
+  padding: min(10rem, 12vh) 0.5rem;
+  text-align: center;
 }
 
 .form-title {
-  text-align: center;
+ 
   padding: 1em 0 0.5em;
   color: var(--sky);
   font-size: 2em;
-} 
+}
+
+.form-subtitle {
+  font-size: 1.3em;
+  color: var(--light);
+}
 
 form {
-  max-width: 750px;
-  width: 90%;
+  max-width: 900px;
+  width: 100%;
   margin: 1em auto;
-  padding: 0 3em;
   border-radius: 3px;
   box-sizing: border-box;
   text-align: center;
@@ -1185,7 +1186,7 @@ textarea::-webkit-scrollbar-thumb {
 .submit-btn {
   margin: 1em auto 0; 
   max-width: 150px;
-  width: 35%;
+  width: 50%;
   font-size: 17px;  
   color: var(--dust);
   padding: 5px 10px;
