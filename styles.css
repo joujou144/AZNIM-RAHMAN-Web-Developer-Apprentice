@@ -702,7 +702,7 @@ span.triangle-element {
 }
 
 .about-bio .small-text {
-  font-size: 17pt;
+  font-size: 16pt;
   text-align: justify;
   color: var(--dust2);
   margin-top: 1em;
@@ -725,6 +725,7 @@ span.triangle-element {
 
   .about-bio .small-text {
     margin-top: 8px;
+    font-size: 17.5pt;
   }
 }
 
@@ -983,8 +984,7 @@ span.triangle-element {
   .course-side span.course-title,
   .course-side > span.course-content-info,
   .skill-list-widget .skill-title,
-  .skill-header,
-  .skill-list-widget li {
+  .skill-header {
     font-size: 16.5pt;
   }
 
@@ -1069,6 +1069,13 @@ span.triangle-element {
 .project-content p {
   font-size: 16.5pt;
   text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .project-content p,
+  .course-side > span.course-content-info {
+    font-size: 15pt;
+  }
 }
 
 @media (max-width: 800px) {
