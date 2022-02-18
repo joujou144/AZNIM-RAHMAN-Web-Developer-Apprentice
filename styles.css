@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 :root {
@@ -184,9 +179,9 @@ nav .navbar .nav-links .links li a:hover {
     justify-content: flex-start;
     align-items: center;
     z-index: 999;
-    inset: 0 0 20% 0;
+    inset: 0 0 25% 0;
     background: var(--clr);
-    backdrop-filter: blur(0.5em);
+    backdrop-filter: blur(0.8em);
     padding: min(20rem, 12vh) 3em;
     margin-left: -1.5em;
     transform: translateX(100%);
@@ -202,8 +197,8 @@ nav .navbar .nav-links .links li a:hover {
     letter-spacing: 0.2em;
     border-bottom: none;
     transition: color 0.5s;
-    font-size: 16px;
-    font-weight: bolder;
+    font-size: 15pt;
+    font-weight: bold;
   }
 
   nav .navbar .nav-links .links li a:hover {
@@ -927,8 +922,8 @@ span.triangle-element {
 }
 
 .course-side > span.course-content-info {
-  font-size: 15pt;
-  letter-spacing: 0.08em;
+  font-size: 14.5pt;
+  letter-spacing: 0.05em;
 }
 
 
@@ -982,7 +977,7 @@ span.triangle-element {
 
 .skill-list-widget li {
   padding: 5px;
-  font-size: 15pt;
+  font-size: 14pt;
 }
 
 
@@ -1054,8 +1049,8 @@ span.triangle-element {
   position: absolute;
   font-variant: all-small-caps;
   color: transparent;
-  font-size: 1.6em;
-  letter-spacing: 0.1em;
+  font-size: 1.8em;
+  letter-spacing: 0.2em;
   text-align: center;
   box-sizing: border-box;
   left: 0;
@@ -1076,9 +1071,9 @@ span.triangle-element {
 }
 
 .project-content p {
-  font-size: 15.5pt;
+  font-size: 14.5pt;
   text-align: justify;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
 }
 
 @media (max-width: 797px) {
