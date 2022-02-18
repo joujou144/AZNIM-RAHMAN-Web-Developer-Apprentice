@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
+
 :root {
   
   --light: #ccc;
@@ -36,6 +37,7 @@ body {
   box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
   letter-spacing: 0.04em;
+  font-weight: lighter;
   
 }
 
@@ -67,7 +69,7 @@ nav .navbar {
 
 nav .navbar .nav-links {
   display: flex;
-  font-size: 13.5pt;
+  font-size: 12pt;
 }
 
 nav .navbar .nav-links .links {
@@ -726,7 +728,7 @@ span.triangle-element {
 
   .about-bio .small-text {
     margin-top: 8px;
-    font-size: 15.5pt;
+    font-size: 14.5pt;
   }
 }
 
