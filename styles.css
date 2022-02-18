@@ -168,9 +168,9 @@ nav .navbar .nav-links .links li a:hover {
 
 @media (max-width: 768px) {
 
-  nav {
+  /* nav {
     background-color: transparent;
-  }
+  } */
 
   nav .navbar .nav-links .links {
     position: fixed;
@@ -1015,7 +1015,7 @@ span.triangle-element {
   height: 370px;
   width: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
