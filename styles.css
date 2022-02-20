@@ -699,7 +699,7 @@ span.triangle-element {
   font-size: 1.35em;
   letter-spacing: 0.05em;
   line-height: 1.8; 
-  color: var(--dust);
+  color: var(--dust2);
   font-family: 'Fjalla One', cursive;
 }
 
@@ -710,7 +710,7 @@ span.triangle-element {
 .about-bio .small-text {
   font-size: 13.5pt;
   text-align: justify;
-  color: var(--dust2);
+  color: var(--dust);
   margin-top: 1em;
   letter-spacing: 0.05em;
 }
@@ -1054,6 +1054,7 @@ span.triangle-element {
 .project-img-group h4 {
   position: absolute;
   font-variant: all-small-caps;
+  font-weight: bold;
   color: transparent;
   font-size: 1.8em;
   letter-spacing: 0.2em;
