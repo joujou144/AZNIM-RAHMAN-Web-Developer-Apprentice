@@ -1,5 +1,5 @@
-# Blog-Portfolio
-A solo project - my first professional portfolio website built using HTML, CSS animations and JavaScript that showcases mu skills in coding, web design and a career change in tech
+# Thinkaholic.me
+A solo project - my first professional portfolio website built using HTML, CSS animations and JavaScript that showcases my skills in coding, web design and a career change in tech
 
 ## Demo 
 
