@@ -1,12 +1,12 @@
 # Thinkaholic.me
 A solo project - my first professional portfolio website built using HTML, CSS animations and JavaScript that showcases my skills in coding, web design and a career change in tech
 
-## Demo 
+## Portfolio website 
 
 https://thinkaholic.me/
 
 Work in progress:
-- Work portfolio page (recent work images, title and project info)
+- Work portfolio page (recent work images for Figma Projects, title and project info)
 
 ## Acknowledgements
 
