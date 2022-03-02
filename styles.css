@@ -22,7 +22,7 @@
   --neutral2: rgb(177, 143, 99);
   --neutral3: #e3bca6;
   --neutral4: #e8ddc9;
-  --rose: #dbb2a5;
+  --rose: rgb(247, 199, 207);
   --rose2: rgb(175, 147, 147);
 }
 
@@ -210,7 +210,7 @@ nav .navbar .nav-links .links li a:hover {
 
   .navbar .nav-links .links li a.active-link  {
     border-bottom: none;
-    color: var(--candy3);
+    color: pink;
   }
 
   nav .navbar .nav-links .links li {
@@ -517,9 +517,9 @@ header .header-content {
   }
   100% {
     color: var(--dust);
-    text-shadow: 0 0 0.6rem dust, 0 0 1.5rem var(--rust2),
-      -0.2rem 0.1rem 1rem var(--rust2), 0.2rem 0.1rem 1rem var(--rust2),
-      0 -0.5rem 2rem var(--candy2), 0 0.5rem 3rem var(--rust2);
+    text-shadow: 0 0 0.6rem var(--dust), 0 0 0.5rem var(--rust2),
+      -0.2rem 0.8rem 2rem var(--rust2), 0.2rem 0.1rem 1rem var(--candy2),
+      0 -0.5rem 1rem var(--candy2), 0 0.5rem 2rem var(--candy);
   }
 }
 
@@ -678,7 +678,8 @@ section {
 /* about-section */
 
 
-.about-bio {
+.about-bio,
+.recommendation {
   width: 75%;
   margin: 0 auto;
 }
@@ -693,13 +694,13 @@ span.triangle-element {
 }
 
 
-.about-bio .big-text,
+.big-text,
 .about-bio em {
   text-align: right;
   font-size: 1.35em;
   letter-spacing: 0.05em;
-  line-height: 1.8; 
-  color: var(--dust2);
+  line-height: 1.6; 
+  color: var(--powder);
   font-family: 'Fjalla One', cursive;
 }
 
@@ -707,12 +708,16 @@ span.triangle-element {
   font-size: 1.1em;
 }
 
-.about-bio .small-text {
+.small-text {
   font-size: 13.5pt;
   text-align: justify;
   color: var(--dust);
   margin-top: 1em;
   letter-spacing: 0.05em;
+}
+
+.recommendation .big-text {
+  color: var(--rose);
 }
 
 @media (min-width: 768px) {
@@ -730,9 +735,14 @@ span.triangle-element {
     font-size: 1.9em;
   }
 
-  .about-bio .small-text {
+  .small-text {
     margin-top: 8px;
     font-size: 14.5pt;
+  }
+
+  .recommendation .big-text,
+  .recommendation .small-text {
+    text-align: center;
   }
 }
 
@@ -776,7 +786,7 @@ span.triangle-element {
 }
 
 .bullet-wrapper .icon-interest {
-  fill: var(--dust2);
+  fill: var(--dust);
   transform-style: preserve-3d;
   animation: rotate 27s infinite linear;
 }
