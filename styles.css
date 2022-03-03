@@ -1033,6 +1033,13 @@ span.triangle-element {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  -webkit-filter: grayscale(95%);
+  filter: grayscale(95%);
+}
+
+.project-img-color {
+  transition: 0.3s ease-in-out;
+  filter: none;
 }
 
 .project-card-group {
@@ -1064,7 +1071,7 @@ span.triangle-element {
 .project-img-group h4 {
   position: absolute;
   font-variant: all-small-caps;
-  font-weight: bold;
+  font-weight: 900;
   color: transparent;
   font-size: 1.8em;
   letter-spacing: 0.2em;
@@ -1075,16 +1082,15 @@ span.triangle-element {
   z-index: 1; 
   top: 9rem;
   bottom: 0;
+  transition: 0.3s ease-in-out;
 }
 
 .project-img-group:hover h4 {
-  color: white;
-  transition: 1s ease-in-out;
+  color: var(--candy2);
 }
 
 .project-info:hover span {
   color: var(--sky);
-  transition: 0.3s ease-in-out;
 }
 
 .project-content p {

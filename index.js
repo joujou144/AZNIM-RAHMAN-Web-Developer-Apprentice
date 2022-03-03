@@ -32,11 +32,11 @@ const projectImgGroup = document.querySelectorAll(".project-img-group")
 
 projectImgGroup.forEach(projectImgGroup => {
   projectImgGroup.addEventListener('mouseover', () => {
-      projectImgGroup.childNodes[1].classList.add('img-darken')
+      projectImgGroup.childNodes[1].classList.add('project-img-color')
   })
 
   projectImgGroup.addEventListener('mouseout', () => {
-     projectImgGroup.childNodes[1].classList.remove('img-darken')
+     projectImgGroup.childNodes[1].classList.remove('project-img-color')
   })
 })
 
