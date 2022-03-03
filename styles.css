@@ -232,15 +232,15 @@ nav .navbar .nav-links .links li a:hover {
 
 
 .blog-collection {
-  max-width: 1280px;
-  margin: 4.5em auto 0.5em auto;
+  max-width: 1350px;
+  margin: 4.5em auto 0 auto;
   min-height: 20vh;
-  width: 90%;
+  /* width: 90%; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 5px;
+  /* gap: 5px;
   padding: 5px;
-  background-color: white;
+  background-color: white; */
 }
 
 .blog-item-group {
@@ -680,8 +680,6 @@ section {
 
 .about-bio,
 .recommendation {
-  width: 75%;
-  margin: 0 auto;
   color: var(--dust);
 }
 
@@ -720,6 +718,12 @@ span.triangle-element {
 }
 
 @media (min-width: 768px) {
+
+  .about-bio,
+.recommendation {
+  width: 75%;
+  margin: 0 auto;
+  }
    
   .about-bio {
     display: flex;
@@ -859,17 +863,6 @@ span.triangle-element {
   }
 }
 
-.interest-icon-section .bullet-label,
-.course-side span.course-title,
-.skill-list-widget .skill-title,
-.skill-header,
-.bullet-label {
-  font-size: 15.5pt;
-  color: var(--accent3);
-  font-family: 'Oswald';
-  letter-spacing: 0.1em;
-}
-
 
 /* Course section */
 
@@ -888,22 +881,7 @@ span.triangle-element {
 
 .course-content-flex {
   margin: 2em auto 0.5em;
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 3em;
   text-align: justify;
-}
-
-.course-content-flex > .course-side {
-  flex: 1 1 65%;
- 
-}
-
-.course-content-flex > .skill-sidebar {
-  flex: 1 1 20%;
 }
 
 .progress {
@@ -934,7 +912,7 @@ span.triangle-element {
 }
 
 .course-side > span.course-content-info {
-  font-size: 14.5pt;
+  font-size: 13pt;
   letter-spacing: 0.05em;
 }
 
@@ -943,7 +921,7 @@ span.triangle-element {
 
 .skill-sidebar {
   text-align: center;
-  margin-top: 0.5em;
+  margin-top: 2em;
 }
 
 .skill-box-1 {
@@ -955,22 +933,6 @@ span.triangle-element {
   padding-top: 1.5em;
 }
 
-@media (max-width: 797px) {
-  .skill-box-1 ul,
-  .skill-box-2 ul {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    flex-wrap: wrap;
- 
-  }
-
-  .skill-box-1 ul > * ,
-  .skill-box-2 ul > * {
-    flex: 1 1 20%;
-  }
-}
-
 .skill-list-widget {
   padding: 2em 2em 1.5em;
   border: 8px solid var(--light);
@@ -980,11 +942,17 @@ span.triangle-element {
   border-bottom: 1px solid var(--neutral4);
   color: var(--sky);
   padding-bottom: 5px;
+  font-size: 14.5pt;
 }
 
 .skill-list-widget ul {
   margin: 0.8em 0;
-  list-style: none; 
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 0.5em;
 }
 
 .skill-list-widget li {
@@ -992,35 +960,34 @@ span.triangle-element {
   font-size: 14pt;
 }
 
-
-@media (max-width: 850px) {
- 
-  .bullet-label,
-  .interest-icon-section .bullet-label,
-  .course-side span.course-title,
-  .course-side > span.course-content-info,
-  .skill-list-widget .skill-title,
-  .skill-header {
-    font-size: 14pt;
-  }
-
-  .skill-sidebar {
-    margin-top: 2em;
-  }
+.interest-icon-section >.bullet-label,
+.course-side > span.course-title,
+.skill-header,
+.bullet-label {
+  font-size: 14pt;
+  color: var(--accent3);
+  font-family: 'Oswald';
+  letter-spacing: 0.1em;
 }
 
+@media (max-width: 600px) {
+
+  .skill-list-widget ul > * {
+    flex: 1 1 30%;
+  }
+}
 
 /* Projects section */
 
-.projects { 
-  margin: 0 auto;
-  width: 80%;
-}
 
 .project-img-group {
   position: relative;
   padding: 8px;
   border: 6px solid var(--powder);
+}
+
+.project-card-group {
+  margin-top: 2.5em;
 }
 
 .project-img {
@@ -1037,26 +1004,6 @@ span.triangle-element {
   transition: 0.3s ease-in-out;
   filter: none;
 }
-
-.project-card-group {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 2em;
-  margin-top: 2.5em;
-  align-items: center;
-}
-
-.project-card-group > .project-img-group {
-  flex: 1 1 40%;
-  min-width: 280px;
-}
-
-
-.project-card-group > .project-content {
-  min-width: 25ch;
-  flex: 1 1 40%;
-}
-
 
 .project-card-group a {
   text-decoration: none;
@@ -1089,23 +1036,15 @@ span.triangle-element {
   color: var(--sky);
 }
 
+.project-content {
+  margin-top: 1em;
+}
+
+
 .project-content p {
-  font-size: 14.5pt;
+  font-size: 13pt;
   text-align: justify;
   letter-spacing: 0.05em;
-}
-
-@media (max-width: 797px) {
-  .project-content p,
-  .course-side > span.course-content-info {
-    font-size: 13pt;
-  }
-}
-
-@media (max-width: 800px) {
-  .project-card-group > .project-content {
-    margin-top: 1em;
-  }
 }
 
 span.project-info-title,
@@ -1131,6 +1070,62 @@ span.tech-icon-row {
   font-weight: bold;
   letter-spacing: 0.1em;
   color: var(--candy2);
+}
+
+@media (min-width: 768px) {
+  .course-content-flex {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    column-gap: 3em;
+  }
+
+  .course-content-flex > .course-side {
+    width: 65%;
+  }
+
+  .skill-list-widget ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-sidebar {
+    margin-top: 0.5em;
+  }
+
+  .interest-icon-section >.bullet-label,
+  .course-side > span.course-title,
+  .skill-list-widget .skill-title,
+  .skill-header,
+  .bullet-label {
+  font-size: 15pt;
+  }
+
+  .projects { 
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .project-card-group {
+    display: flex;
+    column-gap: 2em;   
+    align-items: center;
+  }
+
+  .project-card-group > .project-img-group {
+    width: 50%;
+    min-width: 280px;
+  }
+
+  .project-card-group > .project-content {
+    min-width: 25ch;
+    width: 50%;
+  }
+
+  .project-content p,
+  .course-side > span.course-content-info {
+    font-size: 14.5pt;
+  }
 }
 
 /* -------Contact Page------- */
