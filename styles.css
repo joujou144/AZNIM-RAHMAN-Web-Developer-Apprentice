@@ -682,6 +682,7 @@ section {
 .recommendation {
   width: 75%;
   margin: 0 auto;
+  color: var(--dust);
 }
 
 span.triangle-element {
@@ -700,7 +701,6 @@ span.triangle-element {
   font-size: 1.35em;
   letter-spacing: 0.05em;
   line-height: 1.6; 
-  color: var(--dust);
   font-family: 'Fjalla One', cursive;
 }
 
@@ -711,7 +711,7 @@ span.triangle-element {
 .small-text {
   font-size: 13.5pt;
   text-align: justify;
-  color: var(--dust);
+  /* color: var(--dust); */
   margin-top: 1em;
   letter-spacing: 0.05em;
 }
