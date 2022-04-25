@@ -1084,7 +1084,7 @@ a.code-link:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 1rem 1.5rem;
+  margin: 0 1rem 1rem;
 }
 
 .tech-icon > img {

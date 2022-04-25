@@ -1,5 +1,7 @@
 const hamburger = document.querySelector(".hamburger")
 const nav = document.querySelector(".links")
+const blogCollection = document.querySelectorAll(".blog-item-group")
+const projectGroup = document.querySelectorAll(".project-img-group")
 
 hamburger.addEventListener("click", function() {
   this.classList.toggle('active')
@@ -14,9 +16,6 @@ hamburger.addEventListener("click", function() {
   console.log(visibility)
 })
 
-
-const blogCollection = document.querySelectorAll(".blog-item-group")
-
 blogCollection.forEach(blogItem => {
   blogItem.addEventListener('mouseover', () => {
       blogItem.childNodes[1].classList.add('img-darken')
@@ -27,16 +26,13 @@ blogCollection.forEach(blogItem => {
   })
 })
 
-
-const projectImgGroup = document.querySelectorAll(".project-img-group")
-
-projectImgGroup.forEach(projectImgGroup => {
-  projectImgGroup.addEventListener('mouseover', () => {
-      projectImgGroup.childNodes[1].classList.add('project-img-color')
+projectGroup.forEach(projectImg => {
+  projectImg.addEventListener('mouseover', () => {
+      projectImg.childNodes[1].classList.add('project-img-color')
   })
 
-  projectImgGroup.addEventListener('mouseout', () => {
-     projectImgGroup.childNodes[1].classList.remove('project-img-color')
+  projectImg.addEventListener('mouseout', () => {
+     projectImg.childNodes[1].classList.remove('project-img-color')
   })
 })
 
