@@ -1010,12 +1010,12 @@ span.triangle-element {
   backdrop-filter: 10px;
   margin-bottom: 1.5rem;
   overflow: hidden;
-  box-shadow: 0.3rem 0.3rem 0.5rem var(--shadowA);
+  box-shadow: 0.4rem 0.4rem 0.4rem var(--shadowA);
   transition: 0.3s ease-in-out;
 }
 
 .project-card-group:hover {
-  box-shadow: 0.5rem 0.5rem 0.5rem var(--shadowB);
+  box-shadow: 0.4rem 0.4rem 0.4rem var(--shadowB);
 }
 
 .project-img {
@@ -1065,14 +1065,15 @@ a.code-link:hover {
 }
 
 .tech-icon > img {
-  height: 2.5em;
+  height: 2.2rem;
   width: 100%;
 }
 
 .tech-icon p {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding: 9px 1px 7px;
+  padding: 0.3rem 0.1rem 0.2rem;
   border: 3px solid var(--candy);
+  font-size: 0.95rem;
   font-weight: bold;
   letter-spacing: 0.1em;
   color: var(--candy2);
@@ -1132,6 +1133,13 @@ a.code-link:hover {
     transform: translateY(-0.5%);
   }
 
+  .tech-icon > img {
+    height: 2.5em;
+  }
+
+  .tech-icon p {
+    padding: 0.58rem 0.1rem 0.45rem;
+  }
 }
 
 /* -------Contact Page------- */
