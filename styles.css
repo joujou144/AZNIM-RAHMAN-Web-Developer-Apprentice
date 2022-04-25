@@ -1015,7 +1015,6 @@ span.triangle-element {
 }
 
 .project-card-group:hover {
-  transform: translateY(-0.5%);
   box-shadow: 0.5rem 0.5rem 0.5rem var(--shadowB);
 }
 
@@ -1150,6 +1149,10 @@ a.code-link:hover {
 
   .project-slider {
     grid-auto-columns: 43%;
+  }
+
+  .project-card-group:hover {
+    transform: translateY(-0.5%);
   }
 
 }
