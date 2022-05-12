@@ -13,6 +13,9 @@
   --accent3: #ffe082;
   --rust2: #df5333;
   --pitch: #272121;
+  --lavender: #9c8ee0;
+  --sea: #53C1DE;
+  --grass: #21B155;
   --sky: #99b3a8;
   --candy: #ff65bd;
   --candy3: #ffa4d8;
@@ -960,14 +963,8 @@ a.code-link:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 85%;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
-
-.tech-icon > img {
-  height: 2.2rem;
-  width: 100%;
+  width: 90%;
+  margin: 1rem auto;
 }
 
 .tech-icon p {
@@ -1034,10 +1031,6 @@ a.code-link:hover {
   .project-card-group:hover {
     transform: translateY(-0.5%);
   }
-
-  .tech-icon > img {
-    height: 2.5rem;
-  }  
 
   .tech-icon p {
     font-size: 1.1rem;
