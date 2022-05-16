@@ -28,7 +28,7 @@
   --rose: rgb(247, 199, 207);
   --rose2: rgb(175, 147, 147);
   --shadowDark: rgba(110, 102, 102, 0.212);
-  --shadowLight: rgba(207, 201, 201, 0.212); 
+  --shadowLight: rgba(233, 230, 230, 0.212); 
   --scroll: rgb(13, 14, 14);
 }
 
@@ -914,6 +914,7 @@ span.triangle-element {
   overflow: hidden;
   box-shadow: 0.45rem 0.45rem 0.45rem var(--shadowDark);
   transition: 0.3s ease-in-out;
+  align-self: normal;
 }
 
 .project-card-group:hover {
@@ -963,8 +964,8 @@ a.code-link:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
-  margin: 1rem auto;
+  margin-top: auto;
+  margin-bottom: 1rem;
 }
 
 .tech-icon p {
