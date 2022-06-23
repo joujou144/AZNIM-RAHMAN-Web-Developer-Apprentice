@@ -1225,11 +1225,11 @@ textarea::-webkit-scrollbar-thumb {
   border: 2px solid var(--candy);
   cursor: pointer;
   letter-spacing: 0.05em;
+  transition: 0.3s ease-in-out;
 }
   
 .submit-btn:hover,
 .submit-btn:focus {
   border: 2px solid var(--neutral4);
   color: var(--sky);
-  transition: 0.3s ease-in-out;
 }
