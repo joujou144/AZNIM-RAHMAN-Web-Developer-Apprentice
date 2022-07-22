@@ -1,29 +1,34 @@
-const hamburger = document.querySelector(".hamburger")
-const nav = document.querySelector(".links")
-const blogCollection = document.querySelectorAll(".blog-item-group")
+const nav = document.getElementById("js-nav")
+const hamburger = document.getElementById("hamburger")
+const mobileMenu = document.getElementById("nav-links")
+const menuLinks = document.querySelectorAll(".nav-links li a")
+const hero = document.getElementById("hero")
 
-
-hamburger.addEventListener("click", function() {
-  this.classList.toggle('active')
-
-  const visibility = nav.getAttribute("data-visible")
-  if (visibility === "false") {
-    nav.setAttribute("data-visible", true)
-  } else {
-    nav.setAttribute("data-visible", false)
-  }
-
-  console.log(visibility)
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active")
+  mobileMenu.classList.toggle("active")
 })
 
-blogCollection.forEach(blogItem => {
-  blogItem.addEventListener('mouseover', () => {
-      blogItem.childNodes[1].classList.add('img-darken')
-  })
-
-  blogItem.addEventListener('mouseout', () => {
-     blogItem.childNodes[1].classList.remove('img-darken')
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    hamburger.classList.toggle("active")
+    mobileMenu.classList.toggle("active")
   })
 })
 
+// const heroOptions = {
+//   rootMargin: "-100px 0px 0px"
+// }
+
+// const heroObserver = new IntersectionObserver((entries, heroObserver) => {
+//   entries.forEach(entry => {
+//     if(!entry.isIntersecting) {
+//       nav.classList.add("scroll-down")
+//     } else {
+//       nav.classList.remove("scroll-down")
+//     }
+//   })
+// }, heroOptions)
+
+// heroObserver.observe(hero)
 

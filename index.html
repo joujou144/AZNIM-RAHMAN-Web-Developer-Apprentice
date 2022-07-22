@@ -3,49 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
-  <meta name="google-site-verification" content="WaGYuPdjj_Myd0-U9hPRU91tDWHW_yVJY83GIX6PcXQ" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="icon" href="/images/logo/aznimblack-transparentbg.png" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
-  <title>AZNIM RAHMAN | Frontend Developer Apprentice</title>
+  <title>new AZNIM RAHMAN | Frontend Developer</title>
 </head>
 <body>
-  <nav>
-    <div class="navbar">
-      <div class="brand light">AZNIM RAHMAN</div>
-      <div class="nav-links">
-        <ul class="links" data-visible="false">
-          <li><a href="index.html" class="active-link main-nav">Home</a></li>
-
-          <li><a href="work.html" class="main-nav">Work</a></li>
-          
-          <li><a href="contact.html" class="main-nav">Contact</a></li>
-        </ul>
-      </div>
-
-      <button class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
-  <!-- End of NavBar -->
-
-  <header class="header-section">
-    <div class="header-content">
-
-      <div class="left-content">
   
-      </div>
-
-      <div class="right-content">
+  <header id="hero" class="hero">
+    <div class="hero-container">
+      <div class="hero-bg"></div>
+      <div class="hero-text">
         <div class="sign-section">
-          <span class="header-subtitle">Thinkaholic</span>
+          <span class="hero-subtitle-blink">
+            <span class="fast-flicker">A</span>z<span class="flicker">n</span>i<span class="flicker">m.</span>
+          </span>          
           <br>
-          <span class="header-subtitle-blink">
-            
+          <span class="hero-subtitle">Thinkaholic.</span>
+          <br>
+          <span class="hero-subtitle-blink">            
             <span class="fast-flicker">W</span>eb
 
             D<span class="fast-flicker">e</span>ve<span class="flicker">l</span>op<span class="flicker">e</span>r
@@ -54,87 +30,91 @@
 
           </span>        
           <br>
-          <span class="header-subtitle">And everything in between.</span>
-
+          <span class="hero-subtitle">And everything in between.</span>
         </div>
-      
       </div>
-
     </div>
   </header>
-  <!-- End of Header -->
-  <main>
-    <!-- Summary -->
-    
-    <section class="about-section">
-      <div class="common-page-container">
-      
-          <div class="about-bio">
-        
-            <p class="big-text">
-              <span class="triangle-element"></span>
-              Hi, I'm Aznim. I'm a self-taught web developer apprentice with an eye for UI effects. I <em>love </em> CSS, my recently-developed super skill. I wake up everyday just to create something intuitive and dynamic with it. I am an ultimate risk-taker who is expressive, resilient, instinctual and always looking for best design practices. 
-            </p>
-            <p class="small-text">
-              My career-change journey from the medical device industry to web development began more out of necessity than raw ambition. As someone who deeply believes in herself and has a tremendous ability to cope with adversity, I have a knack for turning dead ends into open roads. Hard skills can be taught but personality is inherent. 
-              <br>
-              <br>
-              As I collided dissimilar universes; sparking ideas and crossing off possibilities of what I wanted to do, finally I discovered something that was totally me. Something radically different - that requires mastery in design which helps convey my creativity skills whilst embracing the functionality of tech at the same time. I genuinely believe anything worth achieving is almost always difficult in the beginning and for this reason, I find peace and comfort in being uncomfortable as it is the prime impetus as how I thrive and flourish.
-              
-            </p>
-          </div>
-          <br>
-          <br>
-          <div class="recommendation">
-            <p class="big-text">
-              "Aznim has shown great tenacity and capacity to learn new skills on short notice. I was quite impressed by her progress in the short time I've been mentoring her. She also has a great sense for visual design, which is a must-have for a front end developer. I wholeheartedly support her application at your organization."
-            </p>
-            <p class="small-text">
-              — Hajime Yamasaki Vukelic, Lead Front End Engineer, Coin Metrics
-            </p>
-            <br>
-            <p class="big-text">
-              "Aznim is an interesting candidate for any team looking for a FE developer, who has more drive and personal commitment than most."
-            </p>
-            <p class="small-text">
-              — Thomas Starlit, Real Agile Software Teams Site Manager, Topdanmark
-            </p>
-          </div>
-      
-      </div>
-    </section>   
+  <!-- End of Hero Section -->
 
-  </main>
-
-  <!-- Start of Footer -->
-  <footer class="footer">
-    <div class="footer-container">
+  <section id="about" class="about">
+    <!-- Nav Section -->
+    <nav id="js-nav" class="nav nav-home">
+      <div class="navbar">
+        <div class="brand">AZNIM RAHMAN</div>
+   
+        <ul id="nav-links" class="nav-links">
+  
+          <li><a href="index.html" class="active-link main-nav">Home</a></li>
+  
+          <li><a href="#about" class="main-nav">About</a></li>
+  
+          <li><a href="work.html" class="main-nav">Work</a></li>
+          
+          <li><a href="contact.html" class="main-nav">Contact</a></li>
+        </ul>
      
-      <div class="clearfix"></div>
+        <button id="hamburger" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+      </div>
+    </nav>
+    <!-- End of Nav Section -->
+    <div class="container">
+      <div class="about-bio">
+        <p class="big-text greeting">
+        
+          Hi, I'm Aznim. I'm a self-taught web developer with a keen eye for UI effects. I <em>love </em> CSS, my recently-developed super skill. I wake up everyday just to create something intuitive and dynamic with it. Expressive and resilient, I am a problem-solver who is always looking to create great user interfaces, writing solid code and takes pride in building best-in-class solutions. 
+        </p>
+        <p class="small-text greeting-small">
+          My career-change journey from the medical device industry to web development began more out of necessity than raw ambition. As someone who has a tremendous ability to cope with adversity, I have a knack for turning dead ends into open roads. Hard skills can be taught but personality is inherent. I genuinely believe the secret to our goals lies solely in our tenacity.
+          <br>
+          <br>
+          Anything worth achieving is almost always difficult in the beginning as it requires willpower, effort and motivation. Self-discipline and my abundant energy fuels me in the pursuit of cultivating skills in a complex discipline of programming whilst raising my child single-handedly has made a powerhouse multitasker who strives for nothing short of excellence in whatever challenge I may be presented with.
+          <a class="see-work" href="work.html">See My Work</a>
+        </p>        
+      </div>
+      <p class="section-title title-top_line">Testimonial</p>
+      <div class="recommendation">
+        
+        <p class="big-text">
+          "Aznim has shown great tenacity and capacity to learn new skills on short notice. I was quite impressed by her progress in the short time I've been mentoring her. She also has a great sense for visual design, which is a must-have for a front end developer. I wholeheartedly support her application at your organization."
+        </p>
+        <p class="small-text">
+          — Hajime Yamasaki Vukelic, Lead Front End Engineer, Coin Metrics
+        </p>
+        <br>
+        <p class="big-text">
+          "Aznim is an interesting candidate for any team looking for a FE developer, who has more drive and personal commitment than most."
+        </p>
+        <p class="small-text">
+          — Thomas Starlit, Real Agile Software Teams Site Manager, Topdanmark
+        </p>
+      </div>
 
-      <div class="copyright">
-
-        <div class="fl">
-         
-          <div class="footer-social-bar">
-            <!-- <a href="contact.html"><i class="ri-mail-open-line"></i></a> -->
-            
-            <a href="https://github.com/joujou144"><i class="ri-github-line"></i></a>
-            <a href="https://www.linkedin.com/in/aznimrahman/"><i class="ri-linkedin-line"></i></a>
-            <a href="https://discordapp.com/users/905059477047349258"><i class="ri-discord-line"></i></a>
-          </div>
+    </div>
+  </section>
+  <!-- End of About Section -->
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="social-bar">
+          <a href="https://github.com/joujou144"><i class="ri-github-fill"></i></a>
+          <a href="https://www.linkedin.com/in/aznimrahman/"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://discordapp.com/users/905059477047349258"><i class="ri-discord-fill"></i></a>
         </div>
-        <div class="fr">
+  
+        <div class="copyright">
           <p>&copy; 2022 A R C</p>
         </div>
-
-      </div>
+      </div>     
     </div>
-    <!-- End of footer container -->
   </footer>
-  <!-- End of Footer -->
 
-  <!-- End of Main body -->
   <script src="index.js"></script>
 </body>
 </html>

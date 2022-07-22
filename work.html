@@ -4,59 +4,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="icon" href="/images/logo/aznimlogo.png" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
   <title>AZNIM RAHMAN | Work Projects</title>
 </head>
 <body>
-  <nav>
+  <!-- Nav Section -->
+  <nav id="js-nav" class="nav">
     <div class="navbar">
       <div class="brand">AZNIM RAHMAN</div>
-      <div class="nav-links">
-        <ul class="links" data-visible="false">
-          <li><a href="index.html" class="main-nav">Home</a></li>
+ 
+      <ul id="nav-links" class="nav-links">
 
-          <li><a href="work.html" class="active-link main-nav">Work</a></li>
-          
-          <li><a href="contact.html" class="main-nav">Contact</a></li>
-        </ul>
-      </div>
+        <li><a href="index.html" class="active-link main-nav">Home</a></li>
 
-      <button class="hamburger">
+        <li><a href="#about" class="main-nav">About</a></li>
+
+        <li><a href="work.html" class="main-nav">Work</a></li>
+        
+        <li><a href="contact.html" class="main-nav">Contact</a></li>
+      </ul>
+   
+      <button id="hamburger" class="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </button>
+      
     </div>
   </nav>
-  <!-- End of NavBar -->
+  <!-- End of Nav Section -->
 
-  <!-- Icon section -->
   <section class="attribute-section">
-    <div class="common-page-container">
-      <p>
-        <span class="heading-box">Portfolio</span>
-      </p>
-      
+    <div class="container">
+      <p class="section-title">Portfolio</p>
       <div class="bullet-section">
 
-        <div class="bullet-wrapper">
-        
-          <svg xmlns="http://www.w3.org/2000/svg" width="85" height="80" viewBox="0 0 512 512" class="icon" id="bulb" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter" fill="none" ><path d="M400 172.9C400 95.1 333.9 32 256 32S112 95.1 112 173c0 31 13.2 59 30.2 83h-.3c10.9 15 21.4 27.7 31.5 45 22 37.8 18.6 74.3 18.7 81.6v1.4h128v-1.4c0-8.9-3.6-43.8 18.4-81.6 10.1-17.3 20.6-30 31.5-45h-.1c16.9-24 30.1-52 30.1-83.1zm-49 81.5c-.6.8-1.1 1.5-1.7 2.3-8.1 10.9-16.5 22.2-24.7 36.1-17.3 29.7-20.4 57.9-20.8 75.1H288V256l32-64h-16.6L272 256v112h-32V256l-31.4-64H192l32 64v112h-15.9c-.5-17.2-3.9-45.7-20.9-75-4.5-7.7-9.1-15-13.7-21h.2l-18.6-25.6c-15.8-21.6-27.1-47.1-27.1-73.6 0-33.4 16-64.8 39.6-88.4s55-36.7 88.4-36.7c33.4 0 64.8 13.1 88.4 36.7 23.6 23.6 39.6 55 39.6 88.4 0 26.5-11.3 51.9-27.1 73.5l-5.9 8.1zM224 464h64v16h-64zM208 432h96v16h-96zM208 400h96v16h-96z"/></svg>
+        <div class="bullet-wrapper">          
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="85" height="80" viewBox="0 0 512 512" class="icon" id="bulb" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter" ><path d="M400 172.9C400 95.1 333.9 32 256 32S112 95.1 112 173c0 31 13.2 59 30.2 83h-.3c10.9 15 21.4 27.7 31.5 45 22 37.8 18.6 74.3 18.7 81.6v1.4h128v-1.4c0-8.9-3.6-43.8 18.4-81.6 10.1-17.3 20.6-30 31.5-45h-.1c16.9-24 30.1-52 30.1-83.1zm-49 81.5c-.6.8-1.1 1.5-1.7 2.3-8.1 10.9-16.5 22.2-24.7 36.1-17.3 29.7-20.4 57.9-20.8 75.1H288V256l32-64h-16.6L272 256v112h-32V256l-31.4-64H192l32 64v112h-15.9c-.5-17.2-3.9-45.7-20.9-75-4.5-7.7-9.1-15-13.7-21h.2l-18.6-25.6c-15.8-21.6-27.1-47.1-27.1-73.6 0-33.4 16-64.8 39.6-88.4s55-36.7 88.4-36.7c33.4 0 64.8 13.1 88.4 36.7 23.6 23.6 39.6 55 39.6 88.4 0 26.5-11.3 51.9-27.1 73.5l-5.9 8.1zM224 464h64v16h-64zM208 432h96v16h-96zM208 400h96v16h-96z"/></svg>
           <span class="bullet-label">Intuitive UI/UX</span>
         </div>
 
-        <div class="bullet-wrapper">
-
+        <div class="bullet-wrapper">          
           <svg xmlns="http://www.w3.org/2000/svg" class="icon" id="device" width="85" height="95" viewBox="0 0 512 512" stroke-linecap="square" stroke-linejoin="miter" stroke-width="8" ><path d="M457.33936,466.657a7.5,7.5,0,1,0,7.5,7.5A7.49974,7.49974,0,0,0,457.33936,466.657ZM489.5,332.585h-6.50732V275.55859a27.53081,27.53081,0,0,0-27.5-27.5H396.4082V167.62891a27.53079,27.53079,0,0,0-27.5-27.5H27.5a27.5308,27.5308,0,0,0-27.5,27.5V410.77734a27.5308,27.5308,0,0,0,27.5,27.5h97.16357a41.887,41.887,0,0,1-4.7583,26.95606l-13.09179,23.38769a15.47572,15.47572,0,0,0,13.50341,23.03614h65.77442a7.54928,7.54928,0,0,0,1.00024-.07422c.63428.04394,1.27246.07422,1.91773.07422H489.5a22.52554,22.52554,0,0,0,22.5-22.5V355.085A22.52554,22.52554,0,0,0,489.5,332.585Zm-34.00732-69.52637a12.5141,12.5141,0,0,1,12.5,12.5V332.585h-17.3086V287.86719a7.49974,7.49974,0,0,0-7.5-7.5H218.85254a7.49974,7.49974,0,0,0-7.5,7.5V434.44141a7.49975,7.49975,0,0,0,7.5,7.5H402.67822V459.25H194.044V275.55859a12.51409,12.51409,0,0,1,12.5-12.5ZM15,167.62891a12.51408,12.51408,0,0,1,12.5-12.5H368.9082a12.51408,12.51408,0,0,1,12.5,12.5v80.42968H206.544a27.5308,27.5308,0,0,0-27.5,27.5v91.88672H15ZM27.5,423.27734a12.51408,12.51408,0,0,1-12.5-12.5v-28.332H179.044v40.832H130.74927c-.02539-.00048-.051,0-.07666,0Zm134.00928,46.39454v14.48535a27.31944,27.31944,0,0,0,3.01758,12.5h-44.21a.476.476,0,0,1-.415-.709l13.09228-23.38867a56.96539,56.96539,0,0,0,6.79956-34.28223H179.044V459.25h-7.11182A10.434,10.434,0,0,0,161.50928,469.67188Zm27.5,26.98535a12.51409,12.51409,0,0,1-12.5-12.5V474.25H402.67822v14.90723a22.39344,22.39344,0,0,0,1.29,7.5ZM402.67822,355.085v71.85645H226.35254V295.36719H435.68408V332.585H425.17822A22.52554,22.52554,0,0,0,402.67822,355.085ZM497,489.15723a7.5082,7.5082,0,0,1-7.5,7.5H425.17822a7.5082,7.5082,0,0,1-7.5-7.5V355.085a7.5082,7.5082,0,0,1,7.5-7.5h17.23023a7.53263,7.53263,0,0,0,1.55127,0H474.717a7.53263,7.53263,0,0,0,1.55127,0H489.5a7.5082,7.5082,0,0,1,7.5,7.5Z"/></svg>
           <span class="bullet-label">Responsive Layout</span>
         </div>
 
-        <div class="bullet-wrapper">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="65" height="65" viewBox="0 0 220 220" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="miter">
+        <div class="bullet-wrapper">          
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="65" height="65" viewBox="0 0 220 220" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="miter">
             <path d="M162.116,38.31c0.163-0.215,0.315-0.438,0.454-0.67c0.033-0.055,0.068-0.109,0.1-0.164
             c0.156-0.276,0.297-0.561,0.419-0.857c0.014-0.034,0.024-0.069,0.038-0.104c0.102-0.26,0.188-0.528,0.261-0.801
             c0.019-0.069,0.037-0.137,0.053-0.207c0.068-0.288,0.124-0.581,0.157-0.881c0.002-0.017,0.006-0.034,0.008-0.052
@@ -75,504 +72,348 @@
             l50.255-63.821C162.07,38.385,162.089,38.346,162.116,38.31z M148.649,15v11.279H55.832V15H148.649z M55.832,189.481v-11.279
             h92.817v11.279H55.832z M140.698,163.202H63.784l38.457-48.838L140.698,163.202z M102.241,90.118L63.784,41.279h76.914
             L102.241,90.118z"/>        
-          </svg>
-
-         
-          <span class="bullet-label">Dynamic and Interactive</span>  
+          </svg>    
+          <span class="bullet-label">Dynamic & Interactive</span>
         </div>
 
-        <div class="bullet-wrapper">
+        <div class="bullet-wrapper">          
           <svg xmlns="http://www.w3.org/2000/svg" class="icon-inverse" id="heart" width="75" height="75" viewBox="0 0 50 50" stroke-width="1"  stroke-linecap="miter" stroke-linejoin="miter">
             <path d="M45.281 25.915c4.949-5.004 4.949-13.146 0-18.15A12.556 12.556 0 0 0 36.292 4h-.001c-3.396 0-6.59 1.337-8.991 3.765L25 10.09l-2.3-2.325A12.56 12.56 0 0 0 13.709 4a12.56 12.56 0 0 0-8.99 3.765c-4.949 5.004-4.949 13.146 0 18.15L25 46.422l20.281-20.507zM6.141 9.171A10.575 10.575 0 0 1 13.709 6c2.858 0 5.547 1.126 7.569 3.171L25 12.935l3.722-3.764A10.576 10.576 0 0 1 36.291 6c2.858 0 5.546 1.126 7.568 3.171 4.183 4.229 4.183 11.109 0 15.338L25 43.578 6.141 24.509c-4.183-4.229-4.183-11.11 0-15.338z"/></svg>
-          </svg>        
           <span class="bullet-label">Built With Love</span>
         </div>
 
-      </div>    
-    </div>
-   
-  </section>
-
-  <!-- Course Section -->
-  <!-- <section class="course-section">
-    <div class="common-page-container">
-      <p>
-        <span class="heading-box">Tech Progress</span>
-      </p>
-
-      <div class="course-content-flex">
-
-        <div class="course-side">          
-
-          <a href="https://scrimba.com/learn/frontend">                       
-            <img src="./images/scrimba.png" alt="scrimba frontend developer course page" class="image-full">            
-          </a>
-          <br>
-          <div class="progress-bar-container">    
-            <div class="progress progress-moved">
-              <div class="progress-bar" >                  
-              </div>                       
-            </div> 
-          </div>
-          <span class="course-title">The Frontend Developer Career Path Course by Scrimba</span> 
-          <br>
-          <br>
-          <span class="course-content-info">When I first started this course in October 2021, I was instantly impressed by their scrim technology. It allows you to pause the video, edit, save the code displayed on the screen, and then resume the tutorial. This interactive mode of learning supersedes, by far, all the other platforms and the structured course module is exactly what I was looking for. I've built over 20 real-world projects thus far and Scrimba has helped me develop my skills in JavaScript and React more confidently. 
-          <br>
-          <br>
-          Initially my aim was to obtain the completion certificate within 4 months. However, I decided to put my progress on hold and focused on building this portfolio website instead to jumpstart my career in the tech industry.
-          </span>
-        
-        </div>
-      
-        <aside class="skill-sidebar">          
-
-          <div class="skill-list-widget">
-
-            <span class="skill-header">Tech Skills & Software</span>
-            <div class="skill-box-1">             
-            
-              <span class="skill-title">Code</span>
-              <ul>              
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li> ES6</li>
-                <li>React</li>
-              </ul>
-            </div>
-          
-
-            <div class="skill-box-2">
-
-              <span class="skill-title">Tool Box</span>
-              <ul>             
-
-                <li>Postman</li>
-                <li>Figma</li>
-                <li>Slack</li>
-                <li>JIRA</li>
-                <li>Git</li>
-              </ul>
-
-            </div>
-
-          </div>      
-          
-        </aside>
-          
       </div>
-
     </div>
-  </section> -->
+  </section>
+  <!-- End of Atrribute Icon section -->
+
+    <!-- Projects section -->
+    <section class="project-section">
+      <div class="container">
+        <div class="section-title title-top_line">Recent Work</div>
   
-  <!-- Projects section -->
-  <section class="project-section">
-    <div class="common-page-container">
-      <p>
-        <span class="heading-box">Recent Work</span>
-      </p>
-
-      <div class="project-slider">
-        <div class="project-card-group">
-
-          <a href="www.abundent.com" class="project-img-group">
-            <img class="project-img" src="./images/portfolio/Abundent-New-Website.png">
-            <!-- <h4>Calendar Widget</h4> -->
-          </a>
-
-          <div class="card-content">
-
-            <p class="project-info">
-              <span class="project-info-title">Abundent.com</span>
-              - Rebranding main website for a Malaysia's IT corporate organisation. Designed by in-house UX team. Current completion status - In progress
-              <a href="https://github.com/joujou144/JS-calendar" class="code-link">[ see code ]</a>
-            </p>
-          
-          </div>
-
-          <div class="tech-icon-row">
-            <span class="tech-icon">
-              <object data="/images/icons/css.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">           
-              <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">                             
-              <object data="/images/icons/code.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">
-              <object data="/images/icons/adobe-xd.svg" type="image/svg+xml"></object>
-            </span>
-          </div>
-
-        </div>
-
-        <div class="project-card-group">
-
-          <a href="https://joujou144.github.io/JS-calendar/" class="project-img-group">
-            <img class="project-img" src="./images/portfolio/Calendar-Widget.png">
-            <!-- <h4>Calendar Widget</h4> -->
-          </a>
-
-          <div class="card-content">
-
-            <p class="project-info">
-              <span class="project-info-title">Calendar Widget</span>
-              - Solo project using pure CSS and vanilla Javascript. Calendar dates, month and year display are rendered dynamically using for loops. 
-              <a href="https://github.com/joujou144/JS-calendar" class="code-link">[ see code ]</a>
-            </p>
-          
-          </div>
-
-          <div class="tech-icon-row">
-            <span class="tech-icon">          
-              <object data="/images/icons/css.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">           
-              <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">               
-              <object data="/images/icons/html5.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">
-              <object data="/images/icons/code.svg" type="image/svg+xml"></object>
-            </span>
-          </div>
-
-        </div>
-
-        <div class="project-card-group">
-
-          <a href="https://joujou144.github.io/Snake-Game/" class="project-img-group">
-            <img class="project-img" src="./images/portfolio/New-Snake.png">            
-          </a>
-
-          <div class="card-content">
-
-            <p class="project-info">
-              <span class="project-info-title">Nokia Snake</span>
-              - Strolling down memory lane, this nostalgic Snake game was re-created with my own styling flair using JavaScript canvas element.
-              <a href="https://github.com/joujou144/Snake-Game" class="code-link">[ see code ]</a>
-            </p>
-          
-          </div>
-
-          <div class="tech-icon-row">
-            <span class="tech-icon">          
-              <object data="/images/icons/css.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">           
-              <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">               
-              <object data="/images/icons/html5.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">
-              <object data="/images/icons/code.svg" type="image/svg+xml"></object>
-            </span>
-          </div>
-
-        </div>
-
-        <div class="project-card-group">
-
-          <a href="https://joujou144.github.io/minimalist-life-blog/" class="project-img-group">
-            <img class="project-img" src="./images/portfolio/minimalistblog.png">            
-          </a>
-
-          <div class="card-content">
-
-            <p class="project-info">
-              <span class="project-info-title">Minimalist Life Blog</span>
-              - A simple and basic mobile responsive 3-page minimalist life blog website, styled with pure CSS and Flexbox without any libraries. 
-              <a href="https://github.com/joujou144/minimalist-life-blog" class="code-link">[ see code ]</a>
-            </p>
-          
-          </div>
-
-          <div class="tech-icon-row">
-            <span class="tech-icon">          
-              <object data="/images/icons/css.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">           
-              <object data="/images/icons/html5.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">               
-              <object data="/images/icons/code.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">
-              <object data="/images/icons/figma.svg" type="image/svg+xml"></object>
-            </span>
-          </div>
-
-        </div>
-
-        <div class="project-card-group">
-
-          <a href="https://github.com/joujou144/react-notes-app" class="project-img-group">
-            <img class="project-img" src="./images/portfolio/notes-app.png">
-          </a>
-
-          <div class="card-content">
-
-            <p class="project-info">
-              <span class="project-info-title">Notes App</span>
-              - The added features in this app allows the user to add note summary titles, move modified notes to the top of the list and deleting each note.
-              <a href="https://github.com/joujou144/react-notes-app" class="code-link">[ see code ]</a>
-            </p>
-          
-          </div>
-
-          <div class="tech-icon-row">
-            <span class="tech-icon">          
-              <object data="/images/icons/css.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">           
-              <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">               
-              <object data="/images/icons/react.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">
-              <object data="/images/icons/code.svg" type="image/svg+xml"></object>
-            </span>
-          </div>
-
-        </div>
-
-        <div class="project-card-group">
-
-          <a href="https://github.com/joujou144/meme-generator" class="project-img-group">
-            <img class="project-img" src="./images/portfolio/meme.png">        
-          </a>
-
-          <div class="card-content">
-
-            <p class="project-info">
-              <span class="project-info-title">Meme Generator</span>
-              - This project contains a render method that returns a controlled form with two input fields and a generate meme button. 
-              <a href="https://github.com/joujou144/meme-generator" class="code-link">[ see code ]</a>
-            </p>
-          
-          </div>
-
-          <div class="tech-icon-row">
-            <span class="tech-icon">          
-              <object data="/images/icons/css.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">           
-              <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">               
-              <p>API</p>
-            </span>
-            <span class="tech-icon">
-              <object data="/images/icons/react.svg" type="image/svg+xml"></object>              
-            </span>
-          </div>
-
-        </div>
-
-        <div class="project-card-group">
-
-          <a href="https://joujou144.github.io/pac-man-game" class="project-img-group">
-            <img class="project-img" src="./images/portfolio/PACMAN.png">
-          </a>
-
-          <div class="card-content">
-
-            <p class="project-info">
-              <span class="project-info-title">Pacman</span>
-              - A fully dynamic Pacman game using advanced JavaScript techniques. The programming of the game includes maze layout, which populated by four ghosts.
-              <a href="https://github.com/joujou144/pac-man-game" class="code-link">[ see code ]</a>
-            </p>            
-
-          </div>
-
-          <div class="tech-icon-row">
-            <span class="tech-icon">          
-              <object data="/images/icons/css.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">           
-              <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">               
-              <object data="/images/icons/html5.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">
-              <object data="/images/icons/code.svg" type="image/svg+xml"></object>
-            </span>
-          </div>
-
-        </div>
-        
-        <div class="project-card-group">
-
-          <a href="https://github.com/joujou144/airbnb-experience-clone" class="project-img-group">
-            <img class="project-img" src="./images/portfolio/airbnb-clone.png">  
-          </a>
-
-          <div class="card-content">
-
-            <p class="project-info">
-              <span class="project-info-title">Airbnb Experience Clone</span>
-              - This project was bootstrapped with Create React App and was created to learn and implement React props concepts. 
-              <a href="https://github.com/joujou144/airbnb-experience-clone" class="code-link">[ see code ]</a>
-            </p>
-          
-          </div>
-
-          <div class="tech-icon-row">
-            <span class="tech-icon">          
-              <object data="/images/icons/css.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">           
-              <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">               
-              <object data="/images/icons/react.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">
-              <object data="/images/icons/html5.svg" type="image/svg+xml"></object>
-            </span>
-          </div>
-
-        </div> 
-        
-        <div class="project-card-group">
-
-          <a href="https://github.com/joujou144/airbnb-experience-clone" class="project-img-group">
-            <img class="project-img" src="./images/portfolio/tenzies.png">  
-          </a>
-
-          <div class="card-content">
-
-            <p class="project-info">
-              <span class="project-info-title">Tenzies Game</span>
-              - The main features of the game used React fundamentals such as props, useState, useEffect, conditional rendering and event listeners.
-              <a href="https://github.com/joujou144/airbnb-experience-clone" class="code-link">[ see code ]</a>
-            </p>
-          
-          </div>
-
-          <div class="tech-icon-row">
-            <span class="tech-icon">          
-              <object data="/images/icons/css.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">           
-              <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">               
-              <object data="/images/icons/react.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">
-              <object data="/images/icons/html5.svg" type="image/svg+xml"></object>
-            </span>
-          </div>
-
-        </div>        
-
-        <div class="project-card-group">
-
-          <a href="#" class="project-img-group">
-            <img class="project-img">        
-          </a>
-
-          <div class="card-content">
-
-            <p class="project-info">
-              <span class="project-info-title">Coming Soon</span>
-              - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam sunt laborum, sed velit accusantium veritatis sapiente officia magnam repellendus
-              <a href="#" class="code-link">[ see code ]</a>
-            </p>            
-
-          </div>
-
-          <div class="tech-icon-row">
-            <span class="tech-icon">          
-              <object data="/images/icons/css.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">           
-              <object data="/images/icons/figma.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">               
-              <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">
-              <object data="/images/icons/code.svg" type="image/svg+xml"></object>
-            </span>
-          </div>
-
-        </div>
-
-        <div class="project-card-group">
-
-          <a href="#" class="project-img-group">
-            <img class="project-img">
-            <!-- <h4>Calendar Widget</h4> -->
-          </a>
-
-          <div class="card-content">
-
-            <p class="project-info">
-              <span class="project-info-title">Coming Soon</span>
-              - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam sunt laborum, sed velit accusantium veritatis sapiente officia magnam repellendus
-              <a href="#" class="code-link">[ see code ]</a>
-            </p>            
-
-          </div>
-
-          <div class="tech-icon-row">
-            <span class="tech-icon">          
-              <object data="/images/icons/css.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">           
-              <object data="/images/icons/figma.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">               
-              <object data="/images/icons/html5.svg" type="image/svg+xml"></object>
-            </span>
-            <span class="tech-icon">
-              <object data="/images/icons/code.svg" type="image/svg+xml"></object>
-            </span>
-          </div>
-
-        </div>        
-
-      </div>
-    </div>      
-  </section>
-
-  <!-- Start of Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-     
-      <div class="clearfix"></div>
-
-      <div class="copyright">
-
-        <div class="fl">
-         
-          <div class="footer-social-bar">
-            <!-- <a href="contact.html"><i class="ri-mail-open-line"></i></a> -->
+        <div class="project-slider">
+          <div class="project-card-group">
+  
+            <a href="www.abundent.com" class="project-img-group">
+              <img class="project-img" src="./images/portfolio/Abundent-New-Website.png">
+   
+            </a>
+  
+            <div class="card-content">
+  
+              <p class="project-info">
+                <span class="project-info-title">Abundent.com</span>
+                - Rebranding main website for a Malaysia's IT corporate organisation. Designed by in-house UX team. Current completion status - In progress
+                <a href="https://github.com/joujou144/JS-calendar" class="code-link">[ see code ]</a>
+              </p>
             
-            <a href="https://github.com/joujou144"><i class="ri-github-line"></i></a>
-            <a href="https://www.linkedin.com/in/aznimrahman/"><i class="ri-linkedin-line"></i></a>
-            <a href="https://discordapp.com/users/905059477047349258"><i class="ri-discord-line"></i></a>
+            </div>
+  
+            <div class="tech-icon-row">
+              <span class="tech-icon">
+                <object data="/images/icons/css.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">           
+                <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">                             
+                <object data="/images/icons/code.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">
+                <object data="/images/icons/adobe-xd.svg" type="image/svg+xml"></object>
+              </span>
+            </div>
+  
           </div>
+  
+          <div class="project-card-group">
+  
+            <a href="https://joujou144.github.io/JS-calendar/" class="project-img-group">
+              <img class="project-img" src="./images/portfolio/Calendar-Widget.png">
+           
+            </a>
+  
+            <div class="card-content">
+  
+              <p class="project-info">
+                <span class="project-info-title">Calendar Widget</span>
+                - Solo project using pure CSS and vanilla Javascript. Calendar dates, month and year display are rendered dynamically using for loops. 
+                <a href="https://github.com/joujou144/JS-calendar" class="code-link">[ see code ]</a>
+              </p>
+            
+            </div>
+  
+            <div class="tech-icon-row">
+              <span class="tech-icon">          
+                <object data="/images/icons/css.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">           
+                <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">               
+                <object data="/images/icons/html5.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">
+                <object data="/images/icons/code.svg" type="image/svg+xml"></object>
+              </span>
+            </div>
+  
+          </div>
+  
+          <div class="project-card-group">
+  
+            <a href="https://joujou144.github.io/Snake-Game/" class="project-img-group">
+              <img class="project-img" src="./images/portfolio/New-Snake.png">            
+            </a>
+  
+            <div class="card-content">
+  
+              <p class="project-info">
+                <span class="project-info-title">Nokia Snake</span>
+                - Strolling down memory lane, this nostalgic Snake game was re-created with my own styling flair using JavaScript canvas element.
+                <a href="https://github.com/joujou144/Snake-Game" class="code-link">[ see code ]</a>
+              </p>
+            
+            </div>
+  
+            <div class="tech-icon-row">
+              <span class="tech-icon">          
+                <object data="/images/icons/css.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">           
+                <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">               
+                <object data="/images/icons/html5.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">
+                <object data="/images/icons/code.svg" type="image/svg+xml"></object>
+              </span>
+            </div>
+  
+          </div>
+  
+          <div class="project-card-group">
+  
+            <a href="https://joujou144.github.io/minimalist-life-blog/" class="project-img-group">
+              <img class="project-img" src="./images/portfolio/minimalistblog.png">            
+            </a>
+  
+            <div class="card-content">
+  
+              <p class="project-info">
+                <span class="project-info-title">Minimalist Life Blog</span>
+                - A simple and basic mobile responsive 3-page minimalist life blog website, styled with pure CSS and Flexbox without any libraries. 
+                <a href="https://github.com/joujou144/minimalist-life-blog" class="code-link">[ see code ]</a>
+              </p>
+            
+            </div>
+  
+            <div class="tech-icon-row">
+              <span class="tech-icon">          
+                <object data="/images/icons/css.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">           
+                <object data="/images/icons/html5.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">               
+                <object data="/images/icons/code.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">
+                <object data="/images/icons/figma.svg" type="image/svg+xml"></object>
+              </span>
+            </div>
+  
+          </div>
+  
+          <div class="project-card-group">
+  
+            <a href="https://github.com/joujou144/react-notes-app" class="project-img-group">
+              <img class="project-img" src="./images/portfolio/notes-app.png">
+            </a>
+  
+            <div class="card-content">
+  
+              <p class="project-info">
+                <span class="project-info-title">Notes App</span>
+                - The added features in this app allows the user to add note summary titles, move modified notes to the top of the list and deleting each note.
+                <a href="https://github.com/joujou144/react-notes-app" class="code-link">[ see code ]</a>
+              </p>
+            
+            </div>
+  
+            <div class="tech-icon-row">
+              <span class="tech-icon">          
+                <object data="/images/icons/css.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">           
+                <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">               
+                <object data="/images/icons/react.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">
+                <object data="/images/icons/code.svg" type="image/svg+xml"></object>
+              </span>
+            </div>
+  
+          </div>
+  
+          <div class="project-card-group">
+  
+            <a href="https://github.com/joujou144/meme-generator" class="project-img-group">
+              <img class="project-img" src="./images/portfolio/meme.png">        
+            </a>
+  
+            <div class="card-content">
+  
+              <p class="project-info">
+                <span class="project-info-title">Meme Generator</span>
+                - This project contains a render method that returns a controlled form with two input fields and a generate meme button. 
+                <a href="https://github.com/joujou144/meme-generator" class="code-link">[ see code ]</a>
+              </p>
+            
+            </div>
+  
+            <div class="tech-icon-row">
+              <span class="tech-icon">          
+                <object data="/images/icons/css.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">           
+                <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">               
+                <p>API</p>
+              </span>
+              <span class="tech-icon">
+                <object data="/images/icons/react.svg" type="image/svg+xml"></object>              
+              </span>
+            </div>
+  
+          </div>
+  
+          <div class="project-card-group">
+  
+            <a href="https://joujou144.github.io/pac-man-game" class="project-img-group">
+              <img class="project-img" src="./images/portfolio/PACMAN.png">
+            </a>
+  
+            <div class="card-content">
+  
+              <p class="project-info">
+                <span class="project-info-title">Pacman</span>
+                - A fully dynamic Pacman game using advanced JavaScript techniques. The programming of the game includes maze layout, which populated by four ghosts.
+                <a href="https://github.com/joujou144/pac-man-game" class="code-link">[ see code ]</a>
+              </p>            
+  
+            </div>
+  
+            <div class="tech-icon-row">
+              <span class="tech-icon">          
+                <object data="/images/icons/css.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">           
+                <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">               
+                <object data="/images/icons/html5.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">
+                <object data="/images/icons/code.svg" type="image/svg+xml"></object>
+              </span>
+            </div>
+  
+          </div>
+          
+          <div class="project-card-group">
+  
+            <a href="https://github.com/joujou144/airbnb-experience-clone" class="project-img-group">
+              <img class="project-img" src="./images/portfolio/airbnb-clone.png">  
+            </a>
+  
+            <div class="card-content">
+  
+              <p class="project-info">
+                <span class="project-info-title">Airbnb Experience Clone</span>
+                - This project was bootstrapped with Create React App and was created to learn and implement React props concepts. 
+                <a href="https://github.com/joujou144/airbnb-experience-clone" class="code-link">[ see code ]</a>
+              </p>
+            
+            </div>
+  
+            <div class="tech-icon-row">
+              <span class="tech-icon">          
+                <object data="/images/icons/css.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">           
+                <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">               
+                <object data="/images/icons/react.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">
+                <object data="/images/icons/html5.svg" type="image/svg+xml"></object>
+              </span>
+            </div>
+  
+          </div> 
+          
+          <div class="project-card-group">
+  
+            <a href="https://github.com/joujou144/airbnb-experience-clone" class="project-img-group">
+              <img class="project-img" src="./images/portfolio/tenzies.png">  
+            </a>
+  
+            <div class="card-content">
+  
+              <p class="project-info">
+                <span class="project-info-title">Tenzies Game</span>
+                - The main features of the game used React fundamentals such as props, useState, useEffect, conditional rendering and event listeners.
+                <a href="https://github.com/joujou144/airbnb-experience-clone" class="code-link">[ see code ]</a>
+              </p>
+            
+            </div>
+  
+            <div class="tech-icon-row">
+              <span class="tech-icon">          
+                <object data="/images/icons/css.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">           
+                <object data="/images/icons/javascript.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">               
+                <object data="/images/icons/react.svg" type="image/svg+xml"></object>
+              </span>
+              <span class="tech-icon">
+                <object data="/images/icons/html5.svg" type="image/svg+xml"></object>
+              </span>
+            </div>  
+          </div>        
+  
+   
+  
         </div>
-        <div class="fr">
+      </div>      
+    </section>
+    <!-- End of Project Section -->
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="social-bar">
+          <a href="https://github.com/joujou144"><i class="ri-github-fill"></i></a>
+          <a href="https://www.linkedin.com/in/aznimrahman/"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://discordapp.com/users/905059477047349258"><i class="ri-discord-fill"></i></a>
+        </div>
+  
+        <div class="copyright">
           <p>&copy; 2022 A R C</p>
         </div>
-
-      </div>
+      </div>     
     </div>
-    <!-- End of footer container -->
   </footer>
-  <!-- End of Footer -->
-
-  <!-- End of Main body -->
+  
   <script src="index.js"></script>
 </body>
 </html>
