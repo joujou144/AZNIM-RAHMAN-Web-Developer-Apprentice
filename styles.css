@@ -500,7 +500,7 @@ nav.scroll-down {
 .big-text {
   font-family: 'Fjalla One', cursive;
   font-size: 1.35rem;
-  color: var(--rose);
+  color: var(--dust);
 }
 
 .greeting {
@@ -610,7 +610,6 @@ nav.scroll-down {
   display: block;
   margin-top: 1em;
   font-size: 1.4rem;
-  color: var(--accent3);
 }
 
 .bullet-wrapper .icon {
