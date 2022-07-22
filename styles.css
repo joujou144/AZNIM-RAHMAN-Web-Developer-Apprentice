@@ -300,18 +300,13 @@ nav.scroll-down {
   letter-spacing: 0.03em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   .sign-section {
-    font-size: 1.85em;
+    bottom: 5em;
+    font-size: 1.6em;
     line-height: 1.5;
     display: block;
     left: 0;
-  }
-}
-
-@media (max-width: 750px) {
-  .sign-section {
-    bottom: 7em;
   }
 }
 
@@ -495,8 +490,6 @@ nav.scroll-down {
 /* ========== ABOUT SECTION ========== */
 
 .about-bio {
-  width: 80%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -539,12 +532,6 @@ nav.scroll-down {
   color: var(--candy);
 }
 
-
-.recommendation {
-  width: 80%;
-  margin: 0 auto;  
-}
-
 .recommendation .big-text {
   text-align: right;
 }
@@ -554,13 +541,12 @@ nav.scroll-down {
 }
 
 @media (min-width: 769px) {
-  .about-container {
-    padding: 0 3em;
-  }
-
+ 
   .about-bio {
     flex-direction: row;
     gap: var(--spacer);
+    width: 80%;
+    margin: 0 auto;
   }
 
   .about-bio > * {
@@ -585,6 +571,8 @@ nav.scroll-down {
   }
 
   .recommendation {
+    width: 80%;
+    margin: 0 auto;
     padding: 0 1em;
   }
   .recommendation .big-text,
@@ -663,7 +651,7 @@ nav.scroll-down {
 
 @media (max-width: 1020px) {
   .bullet-wrapper {
-    flex: 1 1 35%;  
+    flex: 1 1 45%;  
   }
 
   .bullet-label {
