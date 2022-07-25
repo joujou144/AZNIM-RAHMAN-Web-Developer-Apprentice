@@ -49,6 +49,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   background-color: var(--pitch);
@@ -110,7 +114,7 @@ i {
   position: absolute;
   background-color: var(--shadowDark);
   height: 1px;
-  top: 1em;
+  top: 0;
   width: 100%;
 }
 
@@ -153,12 +157,11 @@ footer {
   position: relative;
   max-width: 2000px;
   width: 100%;
-  /* height: 100%; */
   margin: 0 auto;
 }
 
 header {
-  min-height: 100vh;
+  height: 100%;
 }
 
 .container {
@@ -216,7 +219,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2em;
+  gap: 1em;
   z-index: 1;
   overflow-x: hidden;
   transition: 0.4s ease left;
@@ -276,7 +279,7 @@ header {
   transform: translate(-4px, 3px) rotate(-45deg);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 650px) {
 
   .hamburger {
     display: none;
@@ -295,7 +298,7 @@ header {
     flex-direction: row;
     gap: 4em;
   }
-
+  
   .nav-links.home {
     overflow: hidden;
   }
@@ -601,9 +604,6 @@ header {
 
 
 /* ========== INTRO SECTION ========== */
-.intro .container {
-  padding-top: 0;
-}
 
 .intro-bio,
 .full-bio,
@@ -631,6 +631,7 @@ header {
   margin-top: 1em;
   position: relative;
 }
+
 
 
 @media (min-width: 769px) {
