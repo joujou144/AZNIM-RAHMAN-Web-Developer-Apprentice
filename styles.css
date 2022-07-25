@@ -601,9 +601,6 @@ header {
 
 
 /* ========== INTRO SECTION ========== */
-.intro .container {
-  padding-top: 5em;
-}
 
 .intro-bio,
 .full-bio,
@@ -634,6 +631,9 @@ header {
 
 
 @media (min-width: 769px) {
+  .intro .container {
+    padding-top: 5em;
+  }
  
   .intro-bio .two-col {
     display: flex;
@@ -677,13 +677,13 @@ header {
   -webkit-filter: grayscale(95%);
   filter: grayscale(100%);
   overflow: hidden;
+  margin: 0 auto;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 700px) {
   .full-bio {
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
-    padding: 0 1em;
   }
 
   .full-bio .two-col {
@@ -693,17 +693,17 @@ header {
   }
 
   .full-bio .two-col > .bio-img {
-    flex: 1 1 30%;  
+    min-width: 30%;  
   }
 
   .full-bio .two-col > .bio-text {
-    flex: 1 1 60%;
-    min-width: 15ch;
+    flex: 1 1 50%;
+    min-width: 25ch;
   }
 
   .bio-img img {
     width: 250px;
-    margin: 0 auto;
+  
     height: 250px;
   }
 }
@@ -723,9 +723,8 @@ header {
 
 @media (min-width: 769px) {
   .recommendation {
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
-    padding: 2em 1em 0;
   }
 
   .recommendation .big-text,
@@ -741,10 +740,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 3em;
-}
-
-.card-wrapper {
-  padding: 1em 0;
+  margin-top: 2em;
 }
 
 .card-group {
@@ -804,7 +800,7 @@ header {
 
 @media (min-width: 720px) {
   .card-wrapper {
-    padding: 3em 0;
+    padding-bottom: 3em;
     border-bottom: 1px solid var(--scroll);
   }
 
