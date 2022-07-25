@@ -16,19 +16,19 @@ menuLinks.forEach(link => {
   })
 })
 
-// const heroOptions = {
-//   rootMargin: "-100px 0px 0px"
-// }
+const heroOptions = {
+  rootMargin: "-100px 0px 0px"
+}
 
-// const heroObserver = new IntersectionObserver((entries, heroObserver) => {
-//   entries.forEach(entry => {
-//     if(!entry.isIntersecting) {
-//       nav.classList.add("scroll-down")
-//     } else {
-//       nav.classList.remove("scroll-down")
-//     }
-//   })
-// }, heroOptions)
+const heroObserver = new IntersectionObserver((entries, heroObserver) => {
+  entries.forEach(entry => {
+    if(!entry.isIntersecting) {
+      nav.classList.add("scroll-down")
+    } else {
+      nav.classList.remove("scroll-down")
+    }
+  })
+}, heroOptions)
 
-// heroObserver.observe(hero)
+heroObserver.observe(hero)
 

@@ -5,95 +5,158 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <title>new AZNIM RAHMAN | Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css">  
+  <title>AZNIM RAHMAN | Frontend Developer</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+ 
+    <!-- Nav Section -->
+    <nav id="js-nav" class="nav home">
+    <div class="navbar home">
+      <div class="brand home">AZNIM RAHMAN</div>
+  
+      <ul id="nav-links" class="nav-links home">
+        <li><a class="home-link eyecatch" href="index.html">Home</a></li>
+
+        <li><a class="eyecatch" href="about.html">About</a></li>
+
+        <li><a class="eyecatch" href="work.html">Work</a></li>
+        
+        <li><a class="eyecatch" href="contact.html">Contact</a></li>
+      </ul>       
+    </div>
+    <button id="hamburger" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>  
+  </nav>
+  <!-- End of Nav Section -->
   
   <header id="hero" class="hero">
     <div class="hero-container">
       <div class="hero-bg"></div>
       <div class="hero-text">
         <div class="sign-section">
-          <span class="hero-subtitle-blink">
-            <span class="fast-flicker">A</span>z<span class="flicker">n</span>i<span class="flicker">m.</span>
-          </span>          
-          <br>
-          <span class="hero-subtitle">Thinkaholic.</span>
-          <br>
-          <span class="hero-subtitle-blink">            
-            <span class="fast-flicker">W</span>eb
 
-            D<span class="fast-flicker">e</span>ve<span class="flicker">l</span>op<span class="flicker">e</span>r
-
-            <span class="fast-flicker">A</span>pp<span class="fast-flicker">r</span>en<span class="flicker">t</span>ic<span class="fast-flicker">e.</span>
-
-          </span>        
+          <span class="hero-subtitle-small">AZNIM RAHMAN</span>          
           <br>
-          <span class="hero-subtitle">And everything in between.</span>
-        </div>
+          <span class="hero-subtitle-blink eyecatch">
+            <span class="flicker">T</span>h<span class="fast-flicker">i</span>nk<span class="fast-flicker">a</span>h<span class="flicker">o</span>li<span class="fast-flicker">c</span>.
+            <br>
+            F<span class="fast-flicker">r</span>on<span class="flicker">t</span>e<span class="flicker">n</span>d <span class="flicker">D</span>e<span class="fast-flicker">v.</span>
+          </span>
+          
+        </div>        
       </div>
     </div>
   </header>
   <!-- End of Hero Section -->
 
-  <section id="about" class="about">
-    <!-- Nav Section -->
-    <nav id="js-nav" class="nav nav-home">
-      <div class="navbar">
-        <div class="brand">AZNIM RAHMAN</div>
-   
-        <ul id="nav-links" class="nav-links">
-  
-          <li><a href="index.html" class="active-link main-nav">Home</a></li>
-  
-          <li><a href="#about" class="main-nav">About</a></li>
-  
-          <li><a href="work.html" class="main-nav">Work</a></li>
-          
-          <li><a href="contact.html" class="main-nav">Contact</a></li>
-        </ul>
-     
-        <button id="hamburger" class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        
-      </div>
-    </nav>
-    <!-- End of Nav Section -->
+  <section class="intro">
     
     <div class="container">
-      <div class="about-bio">
-        <p class="big-text greeting">
+      <div class="intro-bio">
+        <div class="two-col">
+          <p class="big-text eyecatch">
         
-          Hi, I'm Aznim. I'm a self-taught web developer with a keen eye for UI effects. I <em>love </em> CSS, my recently-developed super skill. I wake up everyday just to create something intuitive and dynamic with it. Expressive and resilient, I am a problem-solver who is always looking to create great user interfaces, writing solid code and takes pride in building best-in-class solutions. 
-        </p>
-        <p class="small-text greeting-small">
-          My career-change journey from the medical device industry to web development began more out of necessity than raw ambition. As someone who has a tremendous ability to cope with adversity, I have a knack for turning dead ends into open roads. Hard skills can be taught but personality is inherent. I genuinely believe the secret to our goals lies solely in our tenacity.
-          <br>
-          <br>
-          Anything worth achieving is almost always difficult in the beginning as it requires willpower, effort and motivation. Self-discipline and my abundant energy fuels me in the pursuit of cultivating skills in a complex discipline of programming whilst raising my child single-handedly has made a powerhouse multitasker who strives for nothing short of excellence in whatever challenge I may be presented with.
-          <a class="see-work" href="work.html">See My Work</a>
-        </p>        
+            Hello, I'm Aznim. I'm a self-taught web developer with a keen eye for UI effects. I <em>love </em> CSS, my recently-developed super skill.
+          </p>
+          <p class="small-text">
+            I wake up everyday just to create something intuitive and dynamic with it. 
+            Expressive and resilient, I am an analytical thinker who is always looking to create great user interfaces and write solid code. I enjoy figuring out the logic behind building applications and the functionality but mostly, I'm interested in making them look attractive and beautiful.           
+          </p>        
+        </div>
+        <div class="page-nav">
+          <p><a class="about-me" href="about.html">More about me</a></p>
+        </div>
       </div>
-      <p class="section-title title-top_line">Testimonial</p>
-      <div class="recommendation">
+     
+    </div>
+  </section>
+
+  <section class="featured-projects">
+    <div class="container title-top_line">
+      <p class="section-title">Featured Projects</p>
+
+      <div class="featured-grid">
+
+        <div class="card-wrapper">
+          <div class="featured card-group">          
+            <div class="project-img-group order-two">
+              <img src="./images/portfolio/silverback.png">  
+            </div>
+            
+            <div class="card-content">
+              <div class="project-info">
+                <p class="project-title eyecatch">Tech Investment</p>
+                <p class="project-desc"> A one-page interactive website with simple animation for a potential tech investment client.</p>             
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>           
+              
+              <div class="card-page-nav">
+                 <a href="https://joujou144.github.io/silverback/">Visit site</a>        
+              </div>                     
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrapper">
+          <div class="featured card-group">          
+            <div class="project-img-group order-left">
+              <img src="./images/portfolio/movie-search-app.png">  
+            </div>
+            
+            <div class="card-content">
+              <div class="project-info">
+
+                <p class="project-title eyecatch">Movie Watchlist App</p>
+                <p class="project-desc">A 2-page movie watchlist site using JS modules and OMdb API. User can also add and remove favourite movies on a list.</p>             
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>           
+              
+              <div class="card-page-nav">
+                 <a href="https://github.com/joujou144/movie-watchlist-app">View demo</a>        
+              </div>                     
+            </div>
+          </div>
+        </div>
         
-        <p class="big-text">
-          "Aznim has shown great tenacity and capacity to learn new skills on short notice. I was quite impressed by her progress in the short time I've been mentoring her. She also has a great sense for visual design, which is a must-have for a front end developer. I wholeheartedly support her application at your organization."
-        </p>
-        <p class="small-text">
-          — Hajime Yamasaki Vukelic, Lead Front End Engineer, Coin Metrics
-        </p>
-        <br>
-        <p class="big-text">
-          "Aznim is an interesting candidate for any team looking for a FE developer, who has more drive and personal commitment than most."
-        </p>
-        <p class="small-text">
-          — Thomas Starlit, Real Agile Software Teams Site Manager, Topdanmark
-        </p>
+        <div class="card-wrapper">
+          <div class="featured card-group">          
+            <div class=" project-img-group order-two">
+              <img src="./images/portfolio/Calendar-Widget.png">  
+            </div>
+            
+            <div class="card-content">
+              <div class="project-info">
+                <p class="project-title eyecatch">Calendar Widget</p>
+                <p class="project-desc">Solo project using pure CSS and vanilla Javascript. Calendar dates, month and year display are rendered dynamically using for loops.</p>             
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>           
+              
+              <div class="card-page-nav">
+                 <a href="https://github.com/joujou144/JS-calendar">View demo</a>        
+              </div>                     
+            </div>
+          </div>
+        </div>
+
+        <div class="page-nav"><a href="work.html">View all my work</a></div>
+
       </div>
 
     </div>
@@ -117,5 +180,6 @@
   </footer>
 
   <script src="index.js"></script>
+  <script src="reveal.js"></script>
 </body>
 </html>
