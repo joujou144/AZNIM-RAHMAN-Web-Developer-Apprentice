@@ -601,6 +601,9 @@ header {
 
 
 /* ========== INTRO SECTION ========== */
+.intro .container {
+  padding-top: 0;
+}
 
 .intro-bio,
 .full-bio,
@@ -631,10 +634,7 @@ header {
 
 
 @media (min-width: 769px) {
-  .intro .container {
-    padding-top: 5em;
-  }
- 
+  
   .intro-bio .two-col {
     display: flex;
     flex-direction: row;
