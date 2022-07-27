@@ -317,11 +317,11 @@ header {
   }
 
   .hamburger.active span:nth-child(1) {
-    transform: translate(2px, -3px) rotate(45deg);
+    transform: translate(0px, -6px) rotate(45deg);
   }
 
   .hamburger.active span:nth-child(3) {
-    transform: translate(-1px, 5px) rotate(-45deg); 
+    transform: translate(-3px, 1px) rotate(-45deg);
   }
 
   /* NAV-LINKS */
@@ -770,10 +770,6 @@ header {
   transition: 0.5s ease-in-out;
 }
 
-.card-group:hover .project-img-group img {
-  filter: none;
-}
-
 .card-content {
   padding: 0 1.5em 1.5em;
   display: flex;
@@ -816,10 +812,15 @@ header {
   border-bottom: 1px solid var(--accent3);
 }
 
-.card-page-nav a:hover {
+.card-group:hover .project-img-group img {
+  filter: none;
+}
+
+.card-group:hover .card-page-nav a {
   color: var(--candy3);
   border-bottom: 1px solid var(--candy3);
 }
+
 
 @media (min-width: 720px) {
   .card-wrapper {
