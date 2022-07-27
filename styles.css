@@ -266,6 +266,18 @@ header {
 .hamburger {
   display: none;
 }
+  
+.hamburger span,
+.contact-close span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  border-radius: 0.4em;
+  background-color: var(--rose);
+  margin-bottom: 0.3em;
+  transform-origin: 0 0;
+  transition: 0.3s;
+}
 
 @media (max-width: 650px) {
   .nav-home {
@@ -281,51 +293,23 @@ header {
     flex: 1 1 40%;
   }
 
-  .nav-home-menu li a:hover::before {
+  .nav-home-menu li a:hover::before,
+  .nav-links.active li a:hover::before,
+  .nav-links.active li .active-link::before {
     transform: scaleX(0);
   }
-
-  .nav-home.sticky .nav-home-menu li .home-link::before {
-    transform: scaleX(0);
-  }
-
-  .nav-home.sticky .home-link {
-    border-bottom: 2px solid var(--candy);
-  }
-
+  
   /* HAMBURGER STYLES*/
   .hamburger {
     display: block;
-    position: absolute;
-    top: 2em;
-    right: 2em;
     cursor: pointer;
     border: none;
     background: none;
     z-index: 100;
   }
-    
-  .hamburger span,
-  .contact-close span {
-    display: block;
-    width: 28px;
-    height: 2px;
-    border-radius: 0.4em;
-    background-color: var(--rose);
-    margin-bottom: 0.3em;
-    transform-origin: 0 0;
-    transition: 0.3s;
-  }
 
-  .hamburger:hover span,
   .hamburger.active span {
     background-color: var(--candy);
-  }
-
-  .hamburger.active {
-    position: fixed;
-    top: 2em;
-    right: 2em;
   }
 
   .hamburger.active span:nth-child(2) {
@@ -333,18 +317,19 @@ header {
   }
 
   .hamburger.active span:nth-child(1) {
-    transform: translate(-2px, -4px) rotate(45deg);
+    transform: translate(5px, -3px) rotate(45deg);
   }
 
   .hamburger.active span:nth-child(3) {
-    transform: translate(-5px, 4px) rotate(-45deg);
+    transform: translate(2px, 4px) rotate(-45deg);  
   }
+
+  /* NAV-LINKS */
 
   /* .nav-links {
     display: none;
   } */
 
-  /* NAV-LINKS */
   .nav-links {
     position: absolute;
     background-color: var(--scroll);
@@ -638,7 +623,7 @@ header {
 }
 
 .big-text {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   color: var(--dust);
 }
 
@@ -647,7 +632,7 @@ header {
 }
 
 .big-text em {
-  font-size: 1.45rem;
+  font-size: 1.4rem;
 }
 
 .intro-bio .small-text {
@@ -670,7 +655,7 @@ header {
     flex: 1 1 35%;
   }
 
-  .intro-bio .big-text {
+  .big-text {
    font-size: 1.8rem;
   }
 
@@ -724,8 +709,7 @@ header {
   }
 
   .bio-img img {
-    width: 250px;
-  
+    width: 250px;  
     height: 250px;
   }
 }
@@ -736,6 +720,7 @@ header {
 
 .recommendation .big-text {
   text-align: right;
+  font-size: 1.1rem;
 }
 
 .recommendation .small-text {
@@ -803,9 +788,13 @@ header {
   gap: 1em;
 }
 
-.project-info .project-title {
-  font-size: 1.3rem;
+.project-title {
+  font-size: 1.1rem;
   color: var(--sky);
+}
+
+.project-desc {
+  font-size: 1rem;
 }
 
 .project-tags {
@@ -820,7 +809,15 @@ header {
 }
 
 .card-page-nav {
-  margin-top: 1em;
+  margin-top: auto;
+}
+
+.card-page-nav a {
+  color: var(--sky);
+}
+
+.card-page-nav a:hover {
+  color: var(--rose);
 }
 
 @media (min-width: 720px) {
@@ -841,6 +838,10 @@ header {
   
   .project-img-group.order-two {
     order: 2;
+  }
+
+  .project-desc {
+    font-size: 1.2rem;
   }
 }
 
@@ -921,7 +922,8 @@ header {
 /* Project Section */
 
 .project-slider {
-  padding: 2em 0;
+  margin-top: 2em;
+  padding-bottom: 2em;
   display: grid;
   width: 100%;
   gap: var(--spacer);
@@ -963,18 +965,6 @@ header {
   align-items: flex-start;
 }
 
-.card-page-nav {
-  margin-top: auto;
-}
-
-.card-page-nav a {
-  color: var(--sky);
-}
-
-.card-page-nav a:hover {
-  color: var(--rose);
-}
-
 @media (min-width: 720px) {
 
   .project-slider {
@@ -983,6 +973,10 @@ header {
 
   .all-work.card-group:hover {
     transform: translateY(-0.5%);
+  }
+
+  .project-title {
+    font-size: 1.3rem;
   }
 
 }
