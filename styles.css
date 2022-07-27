@@ -317,7 +317,7 @@ header {
   }
 
   .hamburger.active span:nth-child(1) {
-    transform: translate(1px, -3px) rotate(45deg);
+    transform: translate(2px, -3px) rotate(45deg);
   }
 
   .hamburger.active span:nth-child(3) {
@@ -836,7 +836,7 @@ header {
   .featured.card-group > * {
     flex: 1 1 40%;
   }
-  
+
   .project-img-group.order-two {
     order: 2;
   }
