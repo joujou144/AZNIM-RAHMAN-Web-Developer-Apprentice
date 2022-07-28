@@ -321,7 +321,7 @@ header {
   }
 
   .hamburger.active span:nth-child(3) {
-    transform: translate(-4px, 3px) rotate(-45deg);
+    transform: translate(-2px, 3px) rotate(-45deg);
   }
 
   /* NAV-LINKS */
