@@ -1,0 +1,341 @@
+
+        <div class="all-work card-group">
+          <a href="https://joujou144.github.io/movie-watchlist-app/" class="project-img-group" target="_blank">
+            <img src="./images/portfolio/movie-search-app.png">  
+          </a>
+          
+          <div class="card-content">
+            <div class="project-info">
+              <p class="project-title eyecatch">Movie Watchlist App</p>
+              <p class="project-desc">A 2-page movie watchlist site using JS modules and OMdb API. User can also add and remove favourite movies on a list.</p>             
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>API</span>
+                <span>JavaScript</span>
+              </div>
+            </div>           
+            
+            <div class="card-page-nav">
+              <span>
+                <a href="https://github.com/joujou144/movie-watchlist-app" target="_blank">source code</a>
+              </span>
+              <span>
+                <a href="https://joujou144.github.io/movie-watchlist-app/" target="_blank">view demo</a>
+              </span>                       
+            </div>                     
+          </div>
+        </div>
+
+        <div class="all-work card-group">
+          <a href="https://abundent.com/" class="project-img-group" target="_blank">
+            <img src="./images/portfolio/Abundent-New-Website.png">  
+          </a>
+          
+          <div class="card-content">
+            <div class="project-info">
+              <p class="project-title eyecatch">Abundent</p>
+              <p class="project-desc">Rebranding main website for a Malaysia's IT corporate organisation. Designed by in-house UX team. Completion status - In progress.</p>             
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>           
+            
+            <div class="card-page-nav">
+              <span>
+                <a href="https://abundent.com/" target="_blank">visit site</a>
+              </span>                       
+            </div>                     
+          </div>
+        </div>
+
+        <div class="all-work card-group">
+          <a href="https://joujou144.github.io/JS-calendar/" class="project-img-group" target="_blank">
+            <img src="./images/portfolio/Calendar-Widget.png">  
+          </a>
+          
+          <div class="card-content">
+            <div class="project-info">
+              <p class="project-title eyecatch">Calendar Widget</p>
+              <p class="project-desc">Solo project using CSS and vanilla JS. Calendar dates, month and year display are rendered dynamically using for loops.</p>             
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>           
+            
+            <div class="card-page-nav">
+              <span>
+                <a href="https://github.com/joujou144/JS-calendar" target="_blank">source code</a>   
+              </span>
+              <span>
+                <a href="https://joujou144.github.io/JS-calendar/" target="_blank">view demo</a>   
+              </span>                   
+            </div>                     
+          </div>
+        </div>
+
+        <div class="all-work card-group">
+          <a href="https://joujou144.github.io/Snake-Game/" class="project-img-group" target="_blank">
+            <img src="./images/portfolio/New-Snake.png">  
+          </a>
+          
+          <div class="card-content">
+            <div class="project-info">
+              <p class="project-title eyecatch">Nokia Snake</p>
+              <p class="project-desc">This nostalgic Snake game was re-created with my own styling flair using JavaScript canvas element.</p>             
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>           
+            
+            <div class="card-page-nav">
+              <span>
+                <a href="https://github.com/joujou144/Snake-Game" target="_blank">source code</a>
+              </span>              
+               <span>
+                <a href="https://joujou144.github.io/Snake-Game/" target="_blank">view demo</a>
+              </span>      
+            </div>                     
+          </div>
+        </div>
+
+        <div class="all-work card-group">
+          <a href="https://joujou144.github.io/roleplaygame/" class="project-img-group" target="_blank">
+            <img src="./images/portfolio/Role-Play-Game.png">  
+          </a>
+          
+          <div class="card-content">
+            <div class="project-info">
+              <p class="project-title eyecatch">Role Play Game</p>
+              <p class="project-desc">A fully dynamic role play game with multiple character opponents using constructor function method.</p>             
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>           
+            
+            <div class="card-page-nav">
+              <span>
+                <a href="https://github.com/joujou144/roleplaygame" target="_blank">source code</a>
+              </span>
+              <span>
+                <a href="https://joujou144.github.io/roleplaygame/" target="_blank">view demo</a>
+              </span>                       
+            </div>                     
+          </div>
+        </div>
+
+        <div class="all-work card-group">
+          <a href="https://joujou144.github.io/minimalist-life-blog/" class="project-img-group" target="_blank">
+            <img src="./images/portfolio/minimalistblog.png">  
+          </a>
+          
+          <div class="card-content">
+            <div class="project-info">
+              <p class="project-title eyecatch">Minimalist Life Blog</p>
+              <p class="project-desc">A simple and basic mobile responsive 3-page minimalist life blog website, styled with pure CSS Flexbox and Grid.</p>             
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>           
+            
+            <div class="card-page-nav">
+              <span>
+                <a href="https://github.com/joujou144/minimalist-life-blog" target="_blank">source code</a>
+              </span>
+              <span>
+                <a href="https://joujou144.github.io/minimalist-life-blog/" target="_blank">view demo</a>
+              </span>                       
+            </div>                     
+          </div>
+        </div>
+
+        <div class="all-work card-group">
+          <a href="https://joujou144.github.io/pac-man-game" class="project-img-group" target="_blank">
+            <img src="./images/portfolio/PACMAN.png">  
+          </a>
+          
+          <div class="card-content">
+            <div class="project-info">
+              <p class="project-title eyecatch">Pacman</p>
+              <p class="project-desc">A fully dynamic Pacman game using advanced JS techniques. The programming of the game includes a maze layout populated by four ghosts.</p>             
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>           
+            
+            <div class="card-page-nav">
+              <span>
+                <a href="https://github.com/joujou144/pac-man-game" target="_blank">source code</a>
+              </span>
+              <span>
+                <a href="https://joujou144.github.io/pac-man-game" target="_blank">view demo</a>
+              </span>                       
+            </div>                     
+          </div>
+        </div>
+
+        <div class="all-work card-group">
+          <a href="https://github.com/joujou144/react-notes-app" class="project-img-group" target="_blank">
+            <img src="./images/portfolio/notes-app.png">  
+          </a>
+          
+          <div class="card-content">
+            <div class="project-info">
+              <p class="project-title eyecatch">Notes App</p>
+              <p class="project-desc">The added features in this app allows the user to add note summary titles, move modified notes to the top of the list and deleting each note.</p>             
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>React</span>
+                <span>JavaScript</span>
+              </div>
+            </div>           
+            
+            <div class="card-page-nav">
+              <span>
+                <a href="https://github.com/joujou144/react-notes-app">source code</a>
+              </span>                       
+            </div>                     
+          </div>
+        </div>
+
+        <div class="all-work card-group">
+          <a href="https://github.com/joujou144/meme-generator" class="project-img-group" target="_blank">
+            <img src="./images/portfolio/meme.png">  
+          </a>
+          
+          <div class="card-content">
+            <div class="project-info">
+              <p class="project-title eyecatch">Meme Generator</p>
+              <p class="project-desc">This project contains a render method that returns a controlled form with two input fields and a generate meme button. </p>             
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>API</span>
+                <span>React</span>
+              </div>
+            </div>           
+            
+            <div class="card-page-nav">
+              <span>
+                <a href="https://github.com/joujou144/meme-generator" target="_blank">source code</a>
+              </span>                       
+            </div>                     
+          </div>
+        </div>
+
+        <div class="all-work card-group">
+          <a href="https://github.com/joujou144/react-tenzies-game" class="project-img-group" target="_blank">
+            <img src="./images/portfolio/tenzies.png">  
+          </a>
+          
+          <div class="card-content">
+            <div class="project-info">
+              <p class="project-title eyecatch">Tenzies Game</p>
+              <p class="project-desc">The main features of the game used React fundamentals such as props, useState, useEffect, conditional rendering and event listeners.</p>             
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>React</span>
+                <span>JavaScript</span>
+              </div>
+            </div>           
+            
+            <div class="card-page-nav">
+              <span>
+                <a href="https://github.com/joujou144/react-tenzies-game" target="_blank">source code</a>
+              </span>                       
+            </div>                     
+          </div>
+        </div>
+
+        <div class="all-work card-group">
+          <a href="https://github.com/joujou144/bbq-splash-page" class="project-img-group" target="_blank">
+            <img src="./images/portfolio/BBQ-page.png">  
+          </a>
+          
+          <div class="card-content">
+            <div class="project-info">
+              <p class="project-title eyecatch">BBQ Splash Page</p>
+              <p class="project-desc">Mock-up BBQ splash page with interactive newsletter subscription form.</p>             
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>           
+            
+            <div class="card-page-nav">
+              <span>
+                <a href="https://github.com/joujou144/bbq-splash-page" target="_blank">source code</a>
+              </span>
+              <span>
+                <a href="https://joujou144.github.io/bbq-splash-page/" target="_blank">view demo</a>
+              </span>                       
+            </div>                     
+          </div>
+        </div>
+
+        <div class="all-work card-group">
+          <a href="https://github.com/joujou144/airbnb-experience-clone" class="project-img-group" target="_blank">
+            <img src="./images/portfolio/airbnb-clone.png">  
+          </a>
+          
+          <div class="card-content">
+            <div class="project-info">
+              <p class="project-title eyecatch">Airbnb Experience Clone</p>
+              <p class="project-desc">This project was bootstrapped with Create React App and was created to learn and implement React props concepts.</p>             
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>React</span>
+                <span>JavaScript</span>
+              </div>
+            </div>           
+            
+            <div class="card-page-nav">
+              <span>
+                <a href="https://github.com/joujou144/airbnb-experience-clone" target="_blank">source code</a>
+              </span>                       
+            </div>                     
+          </div>
+        </div>
+
+        <div class="all-work card-group">
+          <a  href="https://joujou144.github.io/password-generator/" class="project-img-group" target="_blank">
+            <img src="./images/portfolio/Password-Generator.png">  
+          </a>
+          
+          <div class="card-content">
+            <div class="project-info">
+              <p class="project-title eyecatch">Password Generator</p>
+              <p class="project-desc">Simple password creator generating 2 password options with customisable character length feature</p>             
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>           
+            
+            <div class="card-page-nav">
+              <span>
+                <a href="https://github.com/joujou144/password-generator" target="_blank">source code</a>
+              </span>
+              <span>
+                <a href="https://joujou144.github.io/password-generator/" target="_blank">view demo</a>
+              </span>                       
+            </div>                     
+          </div>
+        </div>
