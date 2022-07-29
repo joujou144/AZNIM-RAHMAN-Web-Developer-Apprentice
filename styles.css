@@ -189,7 +189,6 @@ header {
   justify-content: center;
   gap: 6em;
   font-size: 1.1rem;
-  /* flex-wrap: wrap; */
   text-align: center;
 }
 
@@ -800,8 +799,8 @@ header {
 }
 
 .card-group:hover .card-page-nav a {
-  color: var(--rose);
-  border-bottom: 1px solid var(--rose);
+  color: var(--candy);
+  border-bottom: 1px solid var(--candy);
 }
 
 
@@ -859,7 +858,7 @@ header {
 }
 
 .bullet-wrapper .icon {
-  stroke: var(--rose);
+  stroke: var(--dust);
   fill: transparent;
   stroke-dashoffset: 1700;
   stroke-dasharray: 1700;
@@ -867,7 +866,7 @@ header {
 }
 
 .bullet-wrapper .icon-inverse {
-  stroke: var(--rose);
+  stroke: var(--dust);
   fill: transparent;
   stroke-dashoffset: 600;
   stroke-dasharray: 600;
@@ -992,7 +991,7 @@ footer {
 
 .copyright p {
   color: var(--pitch);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding-top: 0.2em;
 }
 
