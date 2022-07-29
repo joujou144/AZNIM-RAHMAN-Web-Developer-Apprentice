@@ -43,24 +43,16 @@ function renderProjectData(projectData) {
           </p>  
                     
           <div class="project-tags">
-            <span>${project.html}</span>
-            <span>${project.css}</span>
-            <span>${project.js}</span>
+            ${project.tags.map(tag => '<span>▵' + tag + '</span>').join('')}
           </div>
         </div>           
         
         <div class="card-page-nav">
-          <span>
-            <a href="${project.source}"_blank">source code</a>
-          </span>
-          <span>
-            <a href="${project.demo}" target="_blank">visit site</a>
-          </span>                     
+          ${project.links.map(link => '<span>' + link + '</span>').join('')}                  
         </div>                     
       </div> 
     </div>   
     `
   }
-
   projectSlider.innerHTML = dataHtml
 }
