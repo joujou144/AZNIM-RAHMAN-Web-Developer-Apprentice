@@ -857,11 +857,11 @@ header {
 .bullet-label {
   display: block;
   margin-top: 1em;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
 .bullet-wrapper .icon {
-  stroke: var(--candy3);
+  stroke: var(--stone);
   fill: transparent;
   stroke-dashoffset: 1700;
   stroke-dasharray: 1700;
@@ -869,7 +869,7 @@ header {
 }
 
 .bullet-wrapper .icon-inverse {
-  stroke: var(--candy3);
+  stroke: var(--stone);
   fill: transparent;
   stroke-dashoffset: 600;
   stroke-dasharray: 600;
