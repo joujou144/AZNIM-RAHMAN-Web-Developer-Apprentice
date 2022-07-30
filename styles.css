@@ -7,9 +7,8 @@
   --light: #ccc;
   --dust: #ffe6ff;
   --accent3: #ffecb4;
-  --rust2: #cf634a;
-  --brick: #8a0f0f;
-  --nutmeg: #c22828;
+  --rust: #cf634a;
+  --nutmeg: #ce7460;
   --pitch: #030202;
   --sky: #99b3a8;
   --candy: #ff65bd;
@@ -76,7 +75,6 @@ h5 {
 a {
   cursor: pointer;
   transition: 0.4s ease;
-  color: var(--light);
 }
 
 p {
@@ -130,12 +128,13 @@ i {
 }
 
 .page-nav:hover {
- border: 1px solid var(--rust2);
+ border: 1px solid var(--nutmeg);
+ background-color: var(--nutmeg);
 }
 
-.page-nav:hover a {
-  color: var(--rust2);
-}
+/* .page-nav:hover a {
+  color: var(--nutmeg);
+} */
 
 .card-page-nav a {
   color: var(--rose);
@@ -215,7 +214,7 @@ header {
   content: '';
   width: 100%;
   height: 2px;
-  background-color: var(--rust2);
+  background-color: var(--nutmeg);
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
@@ -426,8 +425,8 @@ header {
 }
 
 .hero-subtitle-blink {
-  text-shadow: 0 0 2rem var(--rust2), 0 0 5rem var(--accent3),
-  -1rem 0.5rem 2rem var(--rust2), 4rem 2rem 2rem var(--accent3),
+  text-shadow: 0 0 2rem var(--rust), 0 0 5rem var(--accent3),
+  -1rem 0.5rem 2rem var(--rust), 4rem 2rem 2rem var(--accent3),
   0 -3rem 4rem var(--candy), 0 0.5rem 2rem var(--accent3);
   animation: shine 2s forwards, flicker 3s infinite;
 }
@@ -446,9 +445,9 @@ header {
   36%,
   75% {
     color: var(--candy3);
-    text-shadow: 0 0 0.6rem var(--rust2), 0 0 1.5rem var(--rust2),
-      -0.2rem 0.1rem 1rem var(--rust2), 0.2rem 0.1rem 1rem var(--accent3),
-      0 -0.5rem 2rem var(--candy3), 0 0.5rem 3rem var(--rust2);
+    text-shadow: 0 0 0.6rem var(--rust), 0 0 1.5rem var(--rust),
+      -0.2rem 0.1rem 1rem var(--rust), 0.2rem 0.1rem 1rem var(--accent3),
+      0 -0.5rem 2rem var(--candy3), 0 0.5rem 3rem var(--rust);
   }
   28%,
   33% {
@@ -469,8 +468,8 @@ header {
   }
   100% {
     color: var(--dust);
-    text-shadow: 0 0 0.6rem var(--stone), 0 0 0.5rem var(--rust2),
-      -0.2rem 0.8rem 2rem var(--rust2), 0.2rem 0.1rem 1rem var(--candy2),
+    text-shadow: 0 0 0.6rem var(--stone), 0 0 0.5rem var(--rust),
+      -0.2rem 0.8rem 2rem var(--rust), 0.2rem 0.1rem 1rem var(--candy2),
       0 -0.5rem 1rem var(--candy2), 0 0.5rem 2rem var(--candy);
   }
 }
@@ -802,8 +801,8 @@ header {
 }
 
 .card-group:hover .card-page-nav a {
-  color: var(--rust2);
-  border-bottom: 1px solid var(--rust2);
+  color: var(--nutmeg);
+  border-bottom: 1px solid var(--nutmeg);
 }
 
 
@@ -965,7 +964,7 @@ header {
 /* ========== FOOTER SECTION ========== */
 
 footer {
-  background-color: var(--rust2);
+  background-color: var(--nutmeg);
 }
 
 
@@ -1089,6 +1088,6 @@ textarea::-webkit-scrollbar-thumb {
   
 .submit-btn:hover,
 .submit-btn:focus {
-  color: var(--pitch);
-  background-color: var(--rose);
+  background-color: var(--nutmeg);
+  border: 1px solid var(--nutmeg);
 }
