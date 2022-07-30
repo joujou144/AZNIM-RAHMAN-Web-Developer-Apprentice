@@ -1,6 +1,7 @@
 const projectData = [
   {
     title: "Tech Investment",
+    demo: "https://joujou144.github.io/silverback/",
     links: [
       '<a href="https://github.com/joujou144/silverback" target="_blank">source code</a>',
       '<a href="https://joujou144.github.io/silverback/" target="_blank">view demo</a>'
@@ -11,6 +12,7 @@ const projectData = [
   },
   {
     title: "Personal Dahsboard",
+    demo: "https://joujou144.github.io/personal-dashboard/",
     links: [
       '<a href="https://github.com/joujou144/personal-dashboard" target="_blank">source code</a>',
       '<a href="https://joujou144.github.io/personal-dashboard/" target="_blank">view demo</a>'
@@ -20,7 +22,8 @@ const projectData = [
     tags: ["HTML", "CSS", "API", "JavaScript"]
   },
   {
-    title: 'My Portfolio',
+    title: "My Portfolio",
+    demo: "https://github.com/joujou144/AZNIMRAHMAN-Web-Dev-Apprentice",
     links: [
       '<a href="https://github.com/joujou144/AZNIMRAHMAN-Web-Dev-Apprentice" target="_blank">source code</a>'
     ],
@@ -30,6 +33,7 @@ const projectData = [
   },
   {
     title: 'Movie Watchlist App',
+    demo: "https://joujou144.github.io/movie-watchlist-app/",
     links: [
       '<a href="https://github.com/joujou144/movie-watchlist-app" target="_blank">source code</a>',
       '<a href="https://joujou144.github.io/movie-watchlist-app/" target="_blank">view demo</a>'
@@ -49,6 +53,7 @@ const projectData = [
   },
   {
     title: 'Calendar Widget',
+    demo: "https://joujou144.github.io/JS-calendar/",
     links: [
       '<a href="https://github.com/joujou144/JS-calendar" target="_blank">source code</a>',
       '<a href="https://joujou144.github.io/JS-calendar/" target="_blank">view demo</a>'
@@ -59,6 +64,7 @@ const projectData = [
   },
   {
     title: 'Tenzies Game',
+    demo: "https://github.com/joujou144/react-tenzies-game",
     links: [
       '<a href="https://github.com/joujou144/react-tenzies-game" target="_blank">source code</a>'
     ],
@@ -68,6 +74,7 @@ const projectData = [
   },
   {
     title: 'Nokia Snake',
+    demo: "https://joujou144.github.io/Snake-Game/",
     links: [
       '<a href="https://github.com/joujou144/Snake-Game" target="_blank">source code</a>',
       '<a href="https://joujou144.github.io/Snake-Game/" target="_blank">view demo</a>'
