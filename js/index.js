@@ -43,7 +43,7 @@ function renderProjectData(projectData) {
           </p>  
                     
           <div class="project-tags">
-            ${project.tags.map(tag => '<span>' + tag + '</span>').join('')}
+            ${project.tags.map(tag => '<span>• ' + tag + '</span>').join('')}
           </div>
         </div>           
         

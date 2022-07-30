@@ -80,7 +80,7 @@ const projectData = [
       '<a href="https://joujou144.github.io/Snake-Game/" target="_blank">view demo</a>'
     ],
     image: "./images/portfolio/New-Snake.png",
-    desc: "This nostalgic Snake game was re-created with my own styling flair using JavaScript canvas element.",
+    desc: "This legendary Snake game was re-created with my own styling flair using JavaScript canvas element.",
     tags: ["HTML", "CSS", "JavaScript"]
   }
 ]

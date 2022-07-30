@@ -15,7 +15,6 @@
   --candy3: #ffa4d8;
   --candy2: #ff2483;
   --clr2: #b3a78c;
-  --neutral: #f1e5df;
   --stone: #e3bca6;
   --rose: #f7c7cf;
   --shadowDark: #6e666636;
@@ -89,7 +88,7 @@ i {
 }
 
 .section-title {
-  /* color: var(--shadowLight); */
+  color: var(--stone);
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -112,6 +111,8 @@ i {
   font-family: 'Fjalla One', cursive;
 }
 
+/* ========= BUTTONS ========= */
+
 .page-nav {
   padding: 0.8em 1.2em;
   border: 1px solid var(--rose);
@@ -123,21 +124,26 @@ i {
   border-radius: 2em;
 }
 
-.page-nav a {
+.page-nav a,
+.card-page-nav a,
+.submit-btn {
   color: var(--rose);
 }
 
-.page-nav:hover {
+.submit-btn {
+  background-color: transparent;
+  font-family: inherit;
+  margin-top: 1em;
+}
+  
+.page-nav:hover,
+.submit-btn:hover,
+.submit-btn:focus {
  border: 1px solid var(--nutmeg);
  background-color: var(--nutmeg);
 }
 
-/* .page-nav:hover a {
-  color: var(--nutmeg);
-} */
-
 .card-page-nav a {
-  color: var(--rose);
   border-bottom: 1px solid var(--rose);
 }
 
@@ -744,7 +750,7 @@ header {
   display: grid;
   grid-template-rows: min-content;
   gap: var(--spacer-short);
-  background-color: var(--scroll);
+  background-color: var(--shadowDark);
   backdrop-filter: 10px;
   overflow: hidden;
   transition: 0.3s ease-in-out;
@@ -801,8 +807,8 @@ header {
 }
 
 .card-group:hover .card-page-nav a {
-  color: var(--nutmeg);
-  border-bottom: 1px solid var(--nutmeg);
+  color: var(--stone);
+  border-bottom: 1px solid var(--stone);
 }
 
 
@@ -1036,7 +1042,7 @@ footer {
 
 .form-title { 
   padding: 1em 0 0.5em;
-  color: var(--rose);
+  color: var(--stone);
   font-size: 2em;
   border-bottom: 1px solid var(--scroll);
 }
@@ -1079,15 +1085,3 @@ textarea::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 
-.submit-btn {
-  background-color: transparent;
-  color: var(--rose);
-  font-family: inherit;
-  margin-top: 1em;
-}
-  
-.submit-btn:hover,
-.submit-btn:focus {
-  background-color: var(--nutmeg);
-  border: 1px solid var(--nutmeg);
-}
