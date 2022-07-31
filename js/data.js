@@ -23,9 +23,9 @@ const projectData = [
   },
   {
     title: "My Portfolio",
-    demo: "https://github.com/joujou144/AZNIMRAHMAN-Web-Dev-Apprentice",
+    demo: "https://github.com/joujou144/AZNIMRAHMAN-Frontend-Dev",
     links: [
-      '<a href="https://github.com/joujou144/AZNIMRAHMAN-Web-Dev-Apprentice" target="_blank">source code</a>'
+      '<a href="https://github.com/joujou144/AZNIMRAHMAN-Frontend-Dev" target="_blank">source code</a>'
     ],
     image: "./images/portfolio/portfolio-site.png",
     desc: "This is the second version of my portfolio. Keeping the code basic but the site remains interactive done with vanilla JS and CSS.",
@@ -70,7 +70,7 @@ const projectData = [
     ],
     image: "./images/portfolio/tenzies.png",
     desc: "The main features of the game used React fundamentals such as props, useState, useEffect, conditional rendering and event listeners.",
-    tags: ["HTML", "CSS", "React", "JavaScript"]
+    tags: ["HTML", "CSS", "ReactJS"]
   },
   {
     title: 'Nokia Snake',

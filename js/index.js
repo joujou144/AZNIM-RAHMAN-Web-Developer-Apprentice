@@ -21,11 +21,10 @@ menuLinks.forEach(link => {
 })
 
 
-
 renderProjectData(projectData)
 
 function renderProjectData(projectData) {
-  const projectSlider = document.getElementById("project-slider")
+  const projectSlider = document.querySelector(".project-slider")
   let dataHtml = ''
 
   for(let project of projectData) {

@@ -88,7 +88,7 @@ i {
 }
 
 .section-title {
-  color: var(--stone);
+  color: var(--light);
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -145,6 +145,13 @@ i {
 
 .card-page-nav a {
   border-bottom: 1px solid var(--rose);
+}
+
+@media (max-width: 650px) {
+  .page-nav a,
+  .submit-btn {
+    font-size: 0.9rem;
+  }
 }
 
 /* ========== LAYOUT ========== */
@@ -220,7 +227,7 @@ header {
   content: '';
   width: 100%;
   height: 2px;
-  background-color: var(--nutmeg);
+  background-color: var(--rose);
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
@@ -620,7 +627,6 @@ header {
 
 .big-text {
   font-size: 1.3rem;
-  color: var(--dust);
 }
 
 .intro-bio .big-text {
@@ -750,7 +756,7 @@ header {
   display: grid;
   grid-template-rows: min-content;
   gap: var(--spacer-short);
-  background-color: var(--shadowDark);
+  background-color: var(--shadowLight);
   backdrop-filter: 10px;
   overflow: hidden;
   transition: 0.3s ease-in-out;
@@ -790,7 +796,7 @@ header {
 .project-tags,
 .card-page-nav {
   display: flex;
-  gap: var(--spacer-short);
+  gap: 0.5em;
 }
 
 .project-tags {
@@ -861,29 +867,32 @@ header {
 
 .bullet-label {
   display: block;
-  margin-top: 1em;
   font-size: 1.1rem;
 }
 
 .bullet-wrapper .icon {
   stroke: var(--dust);
   fill: transparent;
-  stroke-dashoffset: 1700;
-  stroke-dasharray: 1700;
-  animation: 4s ease-in forwards icon;
+  stroke-dashoffset: 200;
+  stroke-dasharray: 200;
+  animation: 5s ease-in forwards icon;
 }
 
-.bullet-wrapper .icon-inverse {
-  stroke: var(--dust);
-  fill: transparent;
-  stroke-dashoffset: 600;
-  stroke-dasharray: 600;
-  animation: 8s ease-in forwards icon-inverse;
+.bullet-wrapper .icon-extended {
+  stroke-dashoffset: 500;
+  stroke-dasharray: 500;
+  animation: 5s ease-in forwards icon-extended;
 }
 
-@keyframes icon-inverse {
+.bullet-wrapper .icon-heart {
+  stroke-dashoffset: 1400;
+  stroke-dasharray: 1400;
+  animation: 4s ease-in forwards icon-heart;
+}
+
+@keyframes icon {
   0% {
-    stroke-dashoffset: 600;
+    stroke-dashoffset: 200;
   }
   
   100% {
@@ -891,9 +900,19 @@ header {
   }
 }
 
-@keyframes icon {
+@keyframes icon-extended {
   0% {
-    stroke-dashoffset: 1700;
+    stroke-dashoffset: 500;
+  }
+  
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes icon-heart {
+  0% {
+    stroke-dashoffset: 1400;
   }
   
   100% {
@@ -941,7 +960,6 @@ header {
   background: var(--rose);
   border-radius: 1em;
 }
-
 
 .all-work.card-group {
   transition: 0.4s ease;
@@ -1042,15 +1060,15 @@ footer {
 
 .form-title { 
   padding: 1em 0 0.5em;
-  color: var(--stone);
+  color: var(--light);
   font-size: 2em;
-  border-bottom: 1px solid var(--scroll);
+  border-bottom: 1px solid var(--shadowLight);
 }
 
 .form-subtitle {
   margin-top: 1em;
   font-size: 1.3em;
-  color: var(--light);
+  color: var(--dust);
 }
 
 form {
@@ -1071,7 +1089,7 @@ input, textarea {
   border: none;
   background-color: transparent;
   font-size: 1em;
-  border: 1px solid var(--shadowDark);
+  border: 1px solid var(--shadowLight);
   font-family: inherit;
   color: var(--rose);
 }
@@ -1081,7 +1099,7 @@ textarea::-webkit-scrollbar {
 }
 
 textarea::-webkit-scrollbar-thumb {
-  background-color: var(--stone);
+  background-color: var(--rose);
   cursor: pointer;
 }
 
