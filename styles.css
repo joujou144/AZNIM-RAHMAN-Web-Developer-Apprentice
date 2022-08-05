@@ -87,26 +87,6 @@ i {
   transition: 0.4s ease;
 }
 
-.section-title {
-  color: var(--light);
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.title-top_line {
-  position: relative;
-}
-
-.title-top_line::before {
-  content: '';
-  position: absolute;
-  background-color: var(--shadowDark);
-  height: 1px;
-  top: 1em;
-  width: 100%;
-}
-
 .eyecatch {
   font-family: 'Fjalla One', cursive;
 }
@@ -175,6 +155,22 @@ header {
   margin: 0 auto;
   padding: 3em 0;
   position: relative;
+}
+
+.section-title {
+  color: var(--light);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.title-top_line::before {
+  content: '';
+  position: absolute;
+  background-color: var(--shadowDark);
+  height: 1px;
+  top: 1em;
+  width: 100%;
 }
 
 /* ========== NAVIGATION ========== */
@@ -932,8 +928,11 @@ header {
 
 /* Project Section */
 
+.section-subtitle {
+  padding: 1.5em 0;
+}
+
 .project-slider {
-  margin-top: 2em;
   padding-bottom: 2em;
   display: grid;
   width: 100%;
