@@ -7,7 +7,7 @@ const projectData = [
       '<a href="https://joujou144.github.io/netflix-clone-JS/" target="_blank">view demo</a>'
     ],   
     image: "./images/portfolio/netflix-clone.png",
-    desc: "A static yet partially functional Netflix homepage clone with movie info, ratings and posters using TMDB API.",
+    desc: "A static yet partially functional Netflix homepage clone with movie info, ratings and posters using The Movie DB API.",
     tags: ["HTML", "CSS", "API","JavaScript"]
   },
   {
