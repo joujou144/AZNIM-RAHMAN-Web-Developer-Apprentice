@@ -754,7 +754,6 @@ header {
   gap: var(--spacer-short);
   /* background-color: var(--shadowLight); */
   background-color: rgba(255, 255, 255, 0.07);
-  /* border: 1px solid var(--shadowLight); */
   backdrop-filter: 10px;
   overflow: hidden;
   transition: 0.3s ease-in-out;
