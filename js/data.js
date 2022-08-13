@@ -1,5 +1,16 @@
 const projectData = [
   {
+    title: "Netflix Clone",
+    demo: "https://joujou144.github.io/netflix-clone-JS/",
+    links: [
+      '<a href="https://github.com/joujou144/netflix-clone-JS" target="_blank">source code</a>',
+      '<a href="https://joujou144.github.io/netflix-clone-JS/" target="_blank">view demo</a>'
+    ],   
+    image: "./images/portfolio/netflix-clone.png",
+    desc: "A static yet partially functional Netflix homepage clone with movie info, ratings and posters using TMDB API.",
+    tags: ["HTML", "CSS", "API","JavaScript"]
+  },
+  {
     title: "Tech Investment",
     demo: "https://joujou144.github.io/silverback/",
     links: [
@@ -70,7 +81,7 @@ const projectData = [
     ],
     image: "./images/portfolio/tenzies.png",
     desc: "The main features of the game used React fundamentals such as props, useState, useEffect, conditional rendering and event listeners.",
-    tags: ["HTML", "CSS", "ReactJS"]
+    tags: ["HTML", "CSS", "React"]
   },
   {
     title: 'Nokia Snake',
