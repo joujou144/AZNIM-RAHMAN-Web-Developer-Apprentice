@@ -70,7 +70,7 @@ const projectData = [
       '<a href="https://joujou144.github.io/JS-calendar/" target="_blank">view demo</a>'
     ],
     image: "./images/portfolio/Calendar-Widget.png",
-    desc: "Solo project using CSS and vanilla JS. Calendar dates, month and year display are rendered dynamically using JavaScript Date.",
+    desc: "Solo project using CSS and vanilla JS. Calendar dates, month and year display are rendered dynamically using JavaScript Date() method.",
     tags: ["HTML", "CSS", "JavaScript"]
   },
   {
