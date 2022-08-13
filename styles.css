@@ -162,6 +162,7 @@ header {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-weight: lighter;
 }
 
 .title-top_line::before {
@@ -836,7 +837,7 @@ header {
   }
 
   .project-desc {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -930,7 +931,18 @@ header {
 /* Project Section */
 
 .section-subtitle {
-  padding: 1.5em 0;
+  padding: 2em 0;
+  position: relative;
+}
+
+.section-subtitle::after {
+  position: absolute;
+  content: '';
+  background-color: var(--light);
+  height: 2px;
+  width: 33px;
+  bottom: 2em;
+  left: 0;
 }
 
 .project-slider {
@@ -981,7 +993,7 @@ header {
   }
 
   .project-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
 }
