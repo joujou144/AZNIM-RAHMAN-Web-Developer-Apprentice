@@ -5,9 +5,6 @@ A solo project - my first professional portfolio website built using HTML, CSS a
 
 https://thinkaholic.me/
 
-Work in progress:
-- Work portfolio page (recent work images for Figma Projects, title and project info)
-
 ## Acknowledgements
 
 Assisted by coding mentors
